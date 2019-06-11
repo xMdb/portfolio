@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Source+Sans+Pro&display=swap');
-
 html {
   background: #075effc7;
 }
@@ -12,6 +11,7 @@ html {
 }
 
 /* 404 Error */
+
 #ohno h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 80px;
@@ -34,8 +34,9 @@ html {
 /* Back to Home */
 
 #backhome h3 {
-  color: #0c0c0c5d;
+  color: #0c0c0c;
 }
+
 #backhome a {
-  color: rgb(58, 42, 150);
+  color: rgb(153, 211, 45);
 }
