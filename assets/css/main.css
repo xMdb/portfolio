@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Chilanka|Merriweather+Sans|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Pacifico&display=swap');
 html {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -16,15 +16,8 @@ html {
   justify-content: center;
 }
 
-.infoText {
-  font-size: 24px;
-  text-align: center;
-  padding-top: 50px;
-  font-family: 'Merriweather Sans', sans-serif;
-}
-
-.fab {
-  padding: 20px;
+a i {
+  padding: 1.3rem;
 }
 
 /* Text Styling */
@@ -41,15 +34,6 @@ html {
   color: #2727270c;
   text-align: center;
   padding: 20px;
-}
-
-/* 404 */
-#errorHeader {
-  font-family: 'Pacifico', cursive;
-  color: #5c5c5c;
-  font-size: 34px;
-  text-align: center;
-  padding-top: 150px;
 }
 
 /* Links */
