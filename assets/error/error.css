@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Source+Sans+Pro&display=swap');
+html {
+  background: #075effc7;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+/* 404 Error */
+
+#ohno h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 80px;
+  margin-left: 300px;
+  margin-top: 236px;
+  color: #0c0c0c;
+}
+
+#ohno h3 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 22px;
+  color: #ffffffd5;
+  margin-left: 300px;
+}
+
+#ohno a {
+  color: #12b86ad5;
+}
+
+/* Back to Home */
+
+#backhome h3 {
+  color: #0c0c0c;
+}
