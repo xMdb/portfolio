@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Matthew Griffin's Portfolio">
@@ -39,6 +40,15 @@
 </head>
 
 <body id="home">
+  <!-- Loader -->
+  
+  <!-- <div class="loaderContainer">
+    <div class="loader triangle">
+      <svg viewBox="0 0 86 80">
+        <polygon points="43 8 79 72 7 72"></polygon>
+      </svg>
+    </div>
+  </div> -->
 
   <!-- Nav -->
   <header>
@@ -59,6 +69,12 @@
     <h1>Who am I?</h1>
     <p>I am from Melbourne, Australia, currently living on the Gold Coast in Queensland, Australia.</p>
   </section>
+
+  <script>
+    $(window).on("load", function () {
+      $(".loaderContainer").fadeOut("slow");
+    });
+  </script>
 </body>
 
 </html>
