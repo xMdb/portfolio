@@ -10,6 +10,14 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+::-moz-selection {
+    background: lightskyblue;
+}
+
+::selection {
+    background: lightskyblue;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }

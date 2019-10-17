@@ -9,6 +9,7 @@ html {
 }
 
 /* Utils */
+
 .centered {
   height: 100%;
   display: flex;
@@ -21,6 +22,7 @@ a i {
 }
 
 /* Text Styling */
+
 #mainHeader {
   font-family: 'Pacifico', cursive;
   color: #5c5c5c;
@@ -37,11 +39,12 @@ a i {
 }
 
 /* Links */
+
 a, a:link, a:visited {
   text-decoration: none;
   color: #313131;
 }
 
 a:active {
-  color: lightblue;
+  color: #aec6cf;
 }
