@@ -182,12 +182,12 @@ ul {
 /* Utils */
 
 .mainText {
-    color: #fff;
+    color: #22252A;
     font-size: 3rem;
 }
 
 .mainTextHighlight {
-    color: #aec6cf;
+    color: #DB504A;
     font-size: 4rem;
     font-family: 'Merci Heart Brush';
     font-weight: normal;
