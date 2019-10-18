@@ -170,12 +170,12 @@ ul {
 
 .mainText {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .mainTextHighlight {
     color: #aec6cf;
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 /* Navbar */
@@ -231,11 +231,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 
-}
-
-#splashPage a {
-
 }
 
 /* About */
