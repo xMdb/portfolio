@@ -183,7 +183,7 @@ ul {
 header {
     display: flex;
     list-style: none;
-    padding: 1rem;
+    padding: 0.25rem 1rem;
     background: #333;
 }
 
@@ -231,6 +231,11 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 
+}
+
+#splashPage a {
+
 }
 
 /* About */
