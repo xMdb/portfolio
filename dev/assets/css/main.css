@@ -46,13 +46,14 @@ ul {
 
 /* Loader from https://codepen.io/aaroniker/pen/omvYNZ */
 
-/* .loaderContainer {
+.loaderContainer {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #aec6cf;
+    z-index: 2;
+    background: #aec6cf;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +61,7 @@ ul {
 
 .loader {
     --path: #2F3545;
-    --dot: #5628EE;
+    --dot: #DB504A;
     --duration: 3s;
     width: 44px;
     height: 44px;
@@ -173,7 +174,7 @@ ul {
 .loader {
     display: inline-block;
     margin: 0 16px;
-} */
+}
 
 /* Utils */
 
@@ -200,7 +201,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     position: sticky;
-    top: 0;
+    top: 1;
     background: #333;
     color: #fff;
     z-index: 1;
