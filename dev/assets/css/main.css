@@ -2,11 +2,7 @@
 @font-face {
     font-family: 'Merci Heart Brush';
     src: url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.eot');
-    src: url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.woff2') format('woff2'),
-        url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.woff') format('woff'),
-        url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.ttf') format('truetype'),
-        url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.svg#MerciHeartBrush-Regular') format('svg');
+    src: url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.woff2') format('woff2'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.woff') format('woff'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.ttf') format('truetype'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.svg#MerciHeartBrush-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -186,14 +182,6 @@ ul {
     font-size: 3rem;
 }
 
-.mainTextHighlight {
-    color: #DB504A;
-    font-size: 4rem;
-    font-family: 'Merci Heart Brush';
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Navbar */
 
 header {
@@ -245,6 +233,14 @@ nav a:hover {
     align-items: center;
 }
 
+#splashPage #name {
+    color: #DB504A;
+    font-size: 4rem;
+    font-family: 'Merci Heart Brush';
+    font-weight: normal;
+    font-style: normal;
+}
+
 #splashPage p {
     color: #fff;
 }
@@ -252,12 +248,10 @@ nav a:hover {
 /* About */
 
 #about {
-    /* background: #242331; */
-    /* background: #011621; */
-    background-color: #fff;
+    padding: 1rem 4rem;
+    display: flex;
 }
 
-#about h1 {
-    font-size: 2.5rem;
-    padding: 0 7rem;
+#about .img {
+    background: #333 url("../img/who.jpeg");
 }
