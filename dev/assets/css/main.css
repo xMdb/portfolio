@@ -36,7 +36,7 @@ a {
 
 p {
     margin: 0.75rem 0;
-    max-width: 50%;
+    max-width: 80%;
 }
 
 ul {
@@ -183,6 +183,28 @@ ul {
     font-size: 3rem;
 }
 
+.bgDark {
+    background: #333;
+    color: white;
+}
+
+.bgLight {
+    background: white;
+    color: #333;
+}
+
+.p1 {
+    padding: 1rem;
+}
+
+.p2 {
+    padding: 2rem;
+}
+
+.p3 {
+    padding: 3rem;
+}
+
 /* Navbar */
 
 header {
@@ -247,10 +269,14 @@ nav a:hover {
 /* About */
 
 #about {
-    padding: 1rem 4rem;
     display: flex;
 }
 
-#about .img {
-    background: #333 url("../img/about.jpg");
+#about div {
+    flex: 1;
 }
+
+#about .aboutImage {
+    background: #333 url("../img/about-me.jpg") no-repeat center center/cover;
+}
+
