@@ -32,6 +32,15 @@ body {
 
 a {
     text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+a:hover {
+    color: #aec6cf;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 p {
