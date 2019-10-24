@@ -32,7 +32,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(82, 82, 82);
+    color: white;
 }
 
 a:hover {
@@ -188,6 +188,11 @@ ul {
 /* Utils */
 
 .mainText {
+    color: white;
+    font-size: 3rem;
+}
+
+.mainTextDark {
     color: #22252A;
     font-size: 3rem;
 }
@@ -202,6 +207,18 @@ ul {
     color: #333;
 }
 
+.whiteText {
+    color: white;
+}
+
+.centerColumn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .p1 {
     padding: 1rem;
 }
@@ -212,6 +229,16 @@ ul {
 
 .p3 {
     padding: 3rem;
+}
+
+.linkDark {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+.linkLight {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
 }
 
 /* Navbar */
@@ -242,15 +269,6 @@ nav ul li {
     padding: 1rem;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #aec6cf;
-}
-
 /* Splash Page */
 
 #splashPage {
@@ -278,14 +296,8 @@ nav a:hover {
 /* About */
 
 #about {
+    width: auto;
+    height: 18rem;
     display: flex;
-}
-
-#about div {
-    flex: 1;
-}
-
-#about .aboutImage {
     background: #333 url("../img/about-me.jpg") no-repeat center center/cover;
 }
-
