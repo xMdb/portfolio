@@ -20,10 +20,12 @@ html {
 
 ::-moz-selection {
     background: lightskyblue;
+    color: #fff;
 }
 
 ::selection {
     background: lightskyblue;
+    color: #fff;
 }
 
 body {
@@ -219,6 +221,17 @@ ul {
     align-items: center;
 }
 
+.textCenter {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
 .p1 {
     padding: 1rem;
 }
@@ -301,3 +314,21 @@ nav ul li {
     display: flex;
     background: #333 url("../img/about-me.jpg") no-repeat center center/cover;
 }
+
+/* Skills */
+
+.flexContainer {
+    display: flex;
+    padding: 1rem;
+}
+
+.skill {
+    display: flex;
+    flex: 2;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
