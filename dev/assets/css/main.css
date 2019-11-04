@@ -16,6 +16,7 @@
 
 html {
     -webkit-font-smoothing: antialiased;
+    background-color: pink; 
 }
 
 ::-moz-selection {
@@ -317,15 +318,32 @@ nav ul li {
 
 /* Skills */
 
-.flexContainer {
+#skills .flexContainer {
     display: flex;
     padding: 1rem;
-    flex-direction: column;
 }
 
 .skill {
     display: flex;
     flex: 2;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Artwork */
+
+#artwork .flexContainer {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.art {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     padding: 1rem;
     text-align: center;
     justify-content: center;
