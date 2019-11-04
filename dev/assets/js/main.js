@@ -14,6 +14,11 @@ $('nav, header, nav ul li a').on('click', function (event) {
   }
 });
 
+$("a[href='#']").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
 // Loader
 $(window).on("load", function () {
   $(".loaderContainer").fadeOut("slow");
