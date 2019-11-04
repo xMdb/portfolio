@@ -320,6 +320,7 @@ nav ul li {
 .flexContainer {
     display: flex;
     padding: 1rem;
+    flex-direction: column;
 }
 
 .skill {
