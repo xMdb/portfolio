@@ -303,15 +303,12 @@ nav ul li {
     font-style: normal;
 }
 
-#splashPage p {
-    color: #fff;
-}
-
 /* About */
 
 #about {
     width: auto;
-    height: 18rem;
+    height: auto;
+    padding: 4rem;
     display: flex;
     background: #333 url("../img/about-me.jpg") no-repeat center center/cover;
 }
@@ -349,13 +346,24 @@ nav ul li {
     justify-content: center;
     align-items: center;
     border: 1px solid #ccc;
+    opacity: 1;
 }
 
-.art:hover {
-    border: 1px solid #777;
+.art img:hover {
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 .art img {
     width: 100%;
     height: auto;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
