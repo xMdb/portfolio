@@ -296,7 +296,7 @@ nav ul li {
 }
 
 #splashPage-art {
-    background: #333 url('../img/art-bg.jpg') no-repeat center center/cover;
+    background: #333 url('../img/art/art-bg.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
