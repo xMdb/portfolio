@@ -295,7 +295,17 @@ nav ul li {
     align-items: center;
 }
 
-#splashPage #name {
+#splashPage-art {
+    background: #333 url('../img/art-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#splashPage .name, #splashPage-art .header-art {
     color: #DB504A;
     font-size: 4rem;
     font-family: 'Merci Heart Brush';
