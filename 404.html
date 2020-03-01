@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Netlify 404 Page -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+    html {
+      -webkit-font-smoothing: antialiased;
+    }
 
     ::-moz-selection {
       background: lightskyblue;
+      color: #fff;
     }
 
     ::selection {
       background: lightskyblue;
+      color: #fff;
     }
 
     h1 {
-      font-family: 'Pacifico', cursive;
-      font-size: 1.5rem;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.7rem;
       text-align: center;
-      padding-top: 6rem;
+    }
+
+    a:hover {
+      color: #aec6cf;
     }
 
     a {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -40,13 +51,23 @@
       text-decoration: none;
       color: #313131;
     }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+      height: 20%;
+    }
   </style>
 
   <title>404 - File Not Found</title>
+
 </head>
 
 <body>
-  <h1>There was a problem reaching this page. Maybe you made a wrong turn?</h1>
+  <img src="assets/img/sad_doggo.jpg" alt="Sad Doggo :(">
+  <h1>Page not found. Want to return home? (doggo is sad for you) 😢</h1>
   <a href="/index.html">Return Home</a></p>
 </body>
 
