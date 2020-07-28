@@ -1,0 +1,10 @@
+/* mobile thingos because i suck at responsive design */
+
+p {
+    margin: 0.75rem 0;
+    max-width: 95%;
+}
+
+.flexContainer {
+    flex-direction: column;
+}
