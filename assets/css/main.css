@@ -268,6 +268,7 @@ ul {
 
 header {
     display: flex;
+    align-items: flex-start;
     list-style: none;
     top: 0;
     padding: 1rem 1rem;
@@ -298,6 +299,7 @@ nav ul li {
 
 #splash {
     height: 100vh;
+    align-items: flex-start;
     background: linear-gradient(231deg, #1397d5, #5e1490);
     background-size: 400% 400%;
     -webkit-animation: splashBG 30s ease infinite;
@@ -383,6 +385,7 @@ nav ul li {
     font-family: 'Merci Heart Brush';
     font-weight: normal;
     font-style: normal;
+    align-items: flex-start;
 }
 
 /* About */
