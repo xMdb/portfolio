@@ -69,7 +69,12 @@ ul {
     top: 0;
     left: 0;
     z-index: 1;
-    background: #aec6cf;
+    background: linear-gradient(231deg, #1397d5, #5e1490);
+    background-size: 400% 400%;
+    -webkit-animation: splashBG 30s ease infinite;
+    -moz-animation: splashBG 30s ease infinite;
+    -o-animation: splashBG 30s ease infinite;
+    animation: splashBG 30s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,52 +269,115 @@ ul {
 header {
     display: flex;
     list-style: none;
-    position: sticky;
     top: 0;
-    padding: 0.25rem 1rem;
-    background: #333;
+    padding: 1rem 1rem;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
 }
 
 .logo {
-    max-width: 3rem;
+    max-width: 4rem;
 }
 
 nav {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    background: #333;
     color: #fff;
 }
 
 nav ul li {
     display: inline-block;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 /* Splash Page */
 
-#splashPage {
-    background: #333 url('../img/bg.jpg') no-repeat center center/cover;
+#splash {
     height: 100vh;
+    background: linear-gradient(231deg, #1397d5, #5e1490);
+    background-size: 400% 400%;
+    -webkit-animation: splashBG 30s ease infinite;
+    -moz-animation: splashBG 30s ease infinite;
+    -o-animation: splashBG 30s ease infinite;
+    animation: splashBG 30s ease infinite;
+}
+
+@-webkit-keyframes splashBG {
+    0% {
+        background-position: 91% 0%
+    }
+    50% {
+        background-position: 10% 100%
+    }
+    100% {
+        background-position: 91% 0%
+    }
+}
+
+@-moz-keyframes splashBG {
+    0% {
+        background-position: 91% 0%
+    }
+    50% {
+        background-position: 10% 100%
+    }
+    100% {
+        background-position: 91% 0%
+    }
+}
+
+@-o-keyframes splashBG {
+    0% {
+        background-position: 91% 0%
+    }
+    50% {
+        background-position: 10% 100%
+    }
+    100% {
+        background-position: 91% 0%
+    }
+}
+
+@keyframes splashBG {
+    0% {
+        background-position: 91% 0%
+    }
+    50% {
+        background-position: 10% 100%
+    }
+    100% {
+        background-position: 91% 0%
+    }
+}
+
+#splashFeature {
+    height: 80%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
 
-#splashPage-art {
-    background: #333 url('../img/art/art-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-#splashPage .name, #splashPage-art .header-art {
+#splashFeature .name {
     color: #DB504A;
     font-size: 4rem;
     font-family: 'Merci Heart Brush';
