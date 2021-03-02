@@ -300,60 +300,7 @@ nav ul li {
 #splash {
     height: 100vh;
     align-items: flex-start;
-    background: linear-gradient(231deg, #1397d5, #5e1490);
-    background-size: 400% 400%;
-    -webkit-animation: splashBG 30s ease infinite;
-    -moz-animation: splashBG 30s ease infinite;
-    -o-animation: splashBG 30s ease infinite;
-    animation: splashBG 30s ease infinite;
-}
-
-@-webkit-keyframes splashBG {
-    0% {
-        background-position: 91% 0%
-    }
-    50% {
-        background-position: 10% 100%
-    }
-    100% {
-        background-position: 91% 0%
-    }
-}
-
-@-moz-keyframes splashBG {
-    0% {
-        background-position: 91% 0%
-    }
-    50% {
-        background-position: 10% 100%
-    }
-    100% {
-        background-position: 91% 0%
-    }
-}
-
-@-o-keyframes splashBG {
-    0% {
-        background-position: 91% 0%
-    }
-    50% {
-        background-position: 10% 100%
-    }
-    100% {
-        background-position: 91% 0%
-    }
-}
-
-@keyframes splashBG {
-    0% {
-        background-position: 91% 0%
-    }
-    50% {
-        background-position: 10% 100%
-    }
-    100% {
-        background-position: 91% 0%
-    }
+    background: linear-gradient(180deg, #1397d5, #fff);
 }
 
 #splashFeature {
@@ -386,62 +333,6 @@ nav ul li {
     font-weight: normal;
     font-style: normal;
     align-items: flex-start;
-}
-
-/* About */
-
-#about {
-    width: auto;
-    height: auto;
-    padding: 4rem;
-    display: flex;
-    background: #333 url("../img/about-me.jpg") no-repeat center center/cover;
-}
-
-/* Skills */
-
-#skills .flexContainer {
-    display: flex;
-    padding: 1rem;
-}
-
-.skill {
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    padding: 0 0.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Artwork */
-
-#artwork .flexContainer {
-    display: flex;
-    padding: 0.5rem;
-}
-
-.art {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    padding: 1rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    opacity: 1;
-}
-
-.art img:hover {
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-.art img {
-    width: 100%;
-    height: auto;
 }
 
 /* Footer */
