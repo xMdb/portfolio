@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 @font-face {
     font-family: 'Merci Heart Brush';
     src: url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.eot');
@@ -71,10 +71,6 @@ ul {
     z-index: 1;
     background: linear-gradient(231deg, #1397d5, #5e1490);
     background-size: 400% 400%;
-    -webkit-animation: splashBG 30s ease infinite;
-    -moz-animation: splashBG 30s ease infinite;
-    -o-animation: splashBG 30s ease infinite;
-    animation: splashBG 30s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,7 +197,7 @@ ul {
 
 .mainText {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .mainTextDark {
@@ -300,11 +296,12 @@ nav ul li {
 #splash {
     height: 100vh;
     align-items: flex-start;
-    background: linear-gradient(180deg, #1397d5, #fff);
+    background: linear-gradient(231deg, #1397d5, #5e1490);
+    background-size: 400% 400%;
 }
 
 #splashFeature {
-    height: 80%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     text-align: center;
