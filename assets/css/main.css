@@ -16,7 +16,7 @@
 
 html {
     -webkit-font-smoothing: antialiased;
-    background-color: #333;
+    background-color: #ffffff   ;
 }
 
 ::-webkit-scrollbar {
@@ -205,11 +205,6 @@ ul {
     font-size: 3rem;
 }
 
-.bgDark {
-    background: #333;
-    color: white;
-}
-
 .bgLight {
     background: white;
     color: #333;
@@ -247,7 +242,7 @@ ul {
 }
 
 .p3 {
-    padding: 3rem;
+    padding-top: 10rem;
 }
 
 .linkDark {
@@ -295,13 +290,11 @@ nav ul li {
 
 #splash {
     height: 100vh;
-    align-items: flex-start;
     background: linear-gradient(231deg, #1397d5, #5e1490);
-    background-size: 400% 400%;
 }
 
 #splashFeature {
-    height: 60%;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -332,11 +325,23 @@ nav ul li {
     align-items: flex-start;
 }
 
+#splashFeature ul li a {    
+    font-size: 2rem;
+}
+
 /* Footer */
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    background: linear-gradient(231deg, #1397d5, #5e1490);  
+    padding: 1em 0 1em 0;
+}
+
+footer ul li a {
+    display: inline-block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }

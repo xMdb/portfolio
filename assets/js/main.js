@@ -1,5 +1,5 @@
 // Smooth Scrolling
-$('nav, header, nav ul li a').on('click', function (event) {
+$('nav, header, #splashFeature ul li a').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
 
