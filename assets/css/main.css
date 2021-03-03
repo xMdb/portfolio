@@ -53,7 +53,6 @@ a:visited {
 p {
     margin: 0.75rem 0;
     max-width: 80%;
-    font-size: 2rem;
 }
 
 ul {
@@ -293,6 +292,7 @@ ul {
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: 1.75rem;
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
@@ -325,10 +325,14 @@ ul {
 /* About */
 
 #about {
-    padding-left: 10rem;
-    font-size: 2em;
-    line-height: 1.35em;
-    overflow-wrap: w;
+    padding: 3rem 5rem;
+    font-size: 1.5em;
+}
+
+#about img {
+    width: 50%;
+    height: 10%;
+    border-radius: 4px;
 }
 
 /* Footer */
