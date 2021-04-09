@@ -330,9 +330,8 @@ ul {
 }
 
 #about img {
-    width: 50%;
-    height: 10%;
-    border-radius: 4px;
+    max-width: 30%;
+    height: auto;
 }
 
 /* Footer */
