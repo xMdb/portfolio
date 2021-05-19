@@ -12,3 +12,7 @@
         display: none;
     }
 }
+
+#projects ul li a img {
+    width: 65vw;
+}

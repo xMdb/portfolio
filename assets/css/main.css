@@ -177,6 +177,14 @@ footer {
     font-size: 1.5rem;
 }
 
+/* About */
+
+#about img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
 /* Projects */
 
 #projects {
@@ -185,12 +193,14 @@ footer {
     background-position: center center, center center, center center;
 }
 
-#projects img {
-    display: grid;
-    grid-template-columns: 1fr 5rem 1fr;
-    grid-template-rows: 100px 200px;
-    place-items: center;
+#projects ul li a img {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 0.5rem 0;
+    border-radius: 5px;
+    width: 35vw;
+    height: auto;
 }
 
 /* Footer */
