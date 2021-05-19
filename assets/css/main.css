@@ -26,11 +26,6 @@ html {
     display: none;
 }
 
-::-moz-selection {
-    background: lightskyblue;
-    color: #fff;
-}
-
 ::selection {
     background: lightskyblue;
     color: #fff;
@@ -166,22 +161,19 @@ footer {
 
 #splash .mainText {
     color: white;
-    font-size: 4rem;
+    font-size: 4vw;
 }
 
 #splash .name {
     color: #DB504A;
-    font-size: 6rem;
+    font-size: 6vw;
     font-family: 'Merci Heart Brush';
     font-weight: normal;
     font-style: normal;
 }
 
 #splash ul li {
-    padding-top: 10rem;
-}
-
-#splash ul li a {
+    padding-top: 10vw;
     font-size: 1.5rem;
 }
 
@@ -195,6 +187,9 @@ footer {
 
 #projects img {
     display: grid;
+    grid-template-columns: 1fr 5rem 1fr;
+    grid-template-rows: 100px 200px;
+    place-items: center;
     padding: 0.5rem 0;
 }
 

@@ -1,10 +1,14 @@
-/* mobile thingos because i suck at responsive design */
-
-p {
-    margin: 0.75rem 0;
-    max-width: 95%;
+#splash .mainText {
+    font-size: 8vw;
 }
 
-.flexContainer {
-    flex-direction: column;
+#splash .name {
+    font-size: 10vw;
+    white-space: nowrap;
+}
+
+@media screen and (max-height: 600px) {
+    #splash ul li {
+        display: none;
+    }
 }
