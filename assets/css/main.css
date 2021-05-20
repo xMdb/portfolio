@@ -193,14 +193,17 @@ footer {
     background-position: center center, center center, center center;
 }
 
+#projects .align {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
 #projects ul li a img {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     padding: 0.5rem 0;
     border-radius: 5px;
-    width: 35vw;
-    height: auto;
+    object-fit: cover;
 }
 
 /* Footer */
