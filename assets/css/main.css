@@ -57,14 +57,14 @@ p {
     max-width: 80%;
 }
 
-ul {
+ul, li {
     text-decoration: none;
     list-style: none;
 }
 
 section,
 footer {
-    padding: 5rem 7rem;
+    padding: 5vw 7vw;
     margin: auto;
     overflow: hidden;
 }
@@ -131,7 +131,68 @@ footer {
 
 #splash {
     height: 100vh;
-    background: linear-gradient(231deg, #1397d5, #5e1490);
+    background: linear-gradient(228deg, #1e9fc7, #1d50db, #9222dd);
+    background-size: 600% 600%;
+    -webkit-animation: splashBG 21s ease infinite;
+    -moz-animation: splashBG 21s ease infinite;
+    -o-animation: splashBG 21s ease infinite;
+    animation: splashBG 21s ease infinite;
+}
+
+@-webkit-keyframes splashBG {
+    0% {
+        background-position: 91% 0
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0
+    }
+}
+
+@-moz-keyframes splashBG {
+    0% {
+        background-position: 91% 0
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0
+    }
+}
+
+@-o-keyframes splashBG {
+    0% {
+        background-position: 91% 0
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0
+    }
+}
+
+@keyframes splashBG {
+    0% {
+        background-position: 91% 0
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0
+    }
 }
 
 #splashFeature {
@@ -195,9 +256,22 @@ footer {
 
 #projects .align {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-columns: repeat(8vw, 1fr);
+    grid-template-rows: repeat(8vw, 5vw);
     grid-gap: 15px;
+}
+
+.container {
+    display: flex;
+}
+
+.repo {
+    display: flex;
+    flex: 2;
+    padding: 0 .5vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #projects ul li a img {
@@ -213,7 +287,7 @@ footer {
     background-color: #4686a0;
     color: rgba(255, 255, 255, 0.75);
     background-attachment: fixed, fixed, fixed;
-    background-image: url(/assets/img/overlay2.png), url(/assets/img/overlay4.svg), linear-gradient(231deg, #1397d5, #5e1490);
+    background-image: url(/assets/img/overlay2.png), url(/assets/img/overlay4.svg), linear-gradient(228deg, #1e9fc7, #1d50db, #9222dd);
     background-position: top left, center center, center center;
     background-size: auto, cover, cover;
     text-align: center;

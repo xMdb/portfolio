@@ -7,11 +7,71 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background: linear-gradient(231deg, #1397d5, #5e1490);
-    background-size: 400% 400%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(228deg, #1e9fc7, #1d50db, #9222dd);
+    background-size: 600% 600%;
+    -webkit-animation: splashBG 21s ease infinite;
+    -moz-animation: splashBG 21s ease infinite;
+    -o-animation: splashBG 21s ease infinite;
+    animation: splashBG 21s ease infinite;
+}
+
+@-webkit-keyframes splashBG {
+    0% {
+        background-position: 91% 0
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0
+    }
+}
+
+@-moz-keyframes splashBG {
+    0% {
+        background-position: 91% 0
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0
+    }
+}
+
+@-o-keyframes splashBG {
+    0% {
+        background-position: 91% 0
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0
+    }
+}
+
+@keyframes splashBG {
+    0% {
+        background-position: 91% 0
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0
+    }
 }
 
 .loader {
@@ -45,7 +105,9 @@
     height: 100%;
 }
 
-.loader svg rect, .loader svg polygon, .loader svg circle {
+.loader svg rect,
+.loader svg polygon,
+.loader svg circle {
     fill: none;
     stroke: var(--path);
     stroke-width: 10px;
@@ -76,9 +138,11 @@
     33% {
         stroke-dashoffset: 74;
     }
+
     66% {
         stroke-dashoffset: 147;
     }
+
     100% {
         stroke-dashoffset: 221;
     }
@@ -88,9 +152,11 @@
     33% {
         stroke-dashoffset: 74;
     }
+
     66% {
         stroke-dashoffset: 147;
     }
+
     100% {
         stroke-dashoffset: 221;
     }
@@ -101,10 +167,12 @@
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
+
     66% {
         -webkit-transform: translate(10px, -18px);
         transform: translate(10px, -18px);
     }
+
     100% {
         -webkit-transform: translate(-10px, -18px);
         transform: translate(-10px, -18px);
@@ -116,10 +184,12 @@
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
+
     66% {
         -webkit-transform: translate(10px, -18px);
         transform: translate(10px, -18px);
     }
+
     100% {
         -webkit-transform: translate(-10px, -18px);
         transform: translate(-10px, -18px);

@@ -7,12 +7,38 @@
     white-space: nowrap;
 }
 
+#splash .whiteText {
+    font-size: 4vw;
+}
+
 @media screen and (max-height: 600px) {
     #splash ul li {
         display: none;
     }
 }
 
-#projects ul li a img {
-    width: 65vw;
+#about img {
+    width: 90%;
+}
+
+#about,
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.repo a img {
+    width: 90%;
+    height: auto;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.repo {
+    padding: 2vw;
 }
