@@ -11,12 +11,6 @@
     font-size: 4vw;
 }
 
-@media screen and (max-height: 600px) {
-    #splash ul li {
-        display: none;
-    }
-}
-
 #about img {
     width: 90%;
 }

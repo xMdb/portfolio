@@ -56,7 +56,8 @@ p {
     margin: 0.75rem 0;
 }
 
-ul, li {
+ul,
+li {
     text-decoration: none;
     list-style: none;
 }
@@ -195,7 +196,7 @@ footer {
 }
 
 #splashFeature {
-    height: 120vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -232,9 +233,9 @@ footer {
     font-style: normal;
 }
 
-#splash ul li {
-    padding-top: 10vw;
-    font-size: 1.5rem;
+#splash ul li a {
+    position: absolute;
+    top: 90%;
 }
 
 /* About */
