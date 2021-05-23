@@ -54,7 +54,6 @@ a:visited {
 
 p {
     margin: 0.75rem 0;
-    max-width: 80%;
 }
 
 ul, li {
@@ -131,7 +130,7 @@ footer {
 
 #splash {
     height: 100vh;
-    background: linear-gradient(228deg, #1e9fc7, #1d50db, #9222dd);
+    background: linear-gradient(228deg, #167997, #1841b3, #7723af);
     background-size: 600% 600%;
     -webkit-animation: splashBG 21s ease infinite;
     -moz-animation: splashBG 21s ease infinite;
@@ -252,13 +251,7 @@ footer {
     background-attachment: fixed, fixed, fixed;
     background-image: url(/assets/img/art-bg.jpg);
     background-position: center center, center center, center center;
-}
-
-#projects .align {
-    display: grid;
-    grid-template-columns: repeat(8vw, 1fr);
-    grid-template-rows: repeat(8vw, 5vw);
-    grid-gap: 15px;
+    text-align: center;
 }
 
 .container {
@@ -269,13 +262,11 @@ footer {
     display: flex;
     flex: 2;
     padding: 0 .5vw;
-    text-align: center;
     justify-content: center;
     align-items: center;
 }
 
 #projects ul li a img {
-    padding: 0.5rem 0;
     border-radius: 5px;
     object-fit: cover;
 }

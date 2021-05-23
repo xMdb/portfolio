@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(228deg, #1e9fc7, #1d50db, #9222dd);
+    background: linear-gradient(228deg, #167997, #1841b3, #7723af);
     background-size: 600% 600%;
     -webkit-animation: splashBG 21s ease infinite;
     -moz-animation: splashBG 21s ease infinite;
