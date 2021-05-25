@@ -75,26 +75,8 @@ footer {
     color: white;
 }
 
-.centerColumn {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.textCenter {
-    text-align: center;
-    padding: 1rem;
-    margin: auto;
-}
-
 .p1 {
     padding: 1rem;
-}
-
-.p2 {
-    padding: 2rem;
 }
 
 .divider {
@@ -226,6 +208,7 @@ footer {
 #splash ul li a {
     position: absolute;
     top: 90%;
+    color: white;
 }
 
 /* About */
