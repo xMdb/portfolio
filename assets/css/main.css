@@ -2,8 +2,7 @@
 
 @font-face {
     font-family: 'Merci Heart Brush';
-    src: url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.eot');
-    src: url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.woff2') format('woff2'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.woff') format('woff'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.ttf') format('truetype'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.svg#MerciHeartBrush-Regular') format('svg');
+    src: url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.woff2') format('woff2'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
