@@ -41,11 +41,11 @@ h1 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #aec6cf;
 }
 
 a:hover {
-    color: #aec6cf;
+    color: #74aec4;
 }
 
 a:visited {
@@ -95,16 +95,6 @@ footer {
 
 .p2 {
     padding: 2rem;
-}
-
-.linkDark {
-    text-decoration: none;
-    color: rgb(82, 82, 82);
-}
-
-.linkLight {
-    text-decoration: none;
-    color: rgb(202, 202, 202);
 }
 
 .divider {
@@ -244,14 +234,20 @@ footer {
     width: 50%;
     height: auto;
     border-radius: 5px;
+    display: block;
+}
+
+#about div {
+    display: flex;
 }
 
 /* Projects */
 
 #projects {
-    background-attachment: fixed, fixed, fixed;
-    background-image: url(/assets/img/art-bg.jpg);
-    background-position: center center, center center, center center;
+    background-attachment: fixed, fixed;
+    background-image: url(/assets/img/proj-bg.jpg);
+    filter: brightness(120%);
+    background-size: cover, cover;
     text-align: center;
 }
 
@@ -259,15 +255,13 @@ footer {
     display: flex;
 }
 
-.repo {
+.repo,
+.desc {
     display: flex;
     flex: 2;
-    padding: 0 .5vw;
+    padding: 0 1vw;
     justify-content: center;
     align-items: center;
-}
-
-#projects ul li a img {
     border-radius: 5px;
     object-fit: cover;
 }
@@ -287,4 +281,8 @@ footer {
 
 footer p {
     margin: auto;
+}
+
+footer a {
+    color: #fff;
 }
