@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-
-@font-face {
-    font-family: 'Merci Heart Brush';
-    src: url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.woff2') format('woff2'), url('../fonts/MerciHeartBrush/MerciHeartBrush-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
 
 * {
     padding: 0;
@@ -19,6 +12,8 @@ html {
     -webkit-font-smoothing: antialiased;
     background-color: #ffffff;
     scrollbar-width: none;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
 ::-webkit-scrollbar {
@@ -26,33 +21,27 @@ html {
 }
 
 ::selection {
-    background: lightskyblue;
-    color: #fff;
+    background: #6d33b9;
+    color: #ffffff;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1 {
-    font-size: 2rem;
-}
-
-a {
-    text-decoration: none;
-    color: #aec6cf;
-}
-
-a:hover {
-    color: #74aec4;
-}
-
+a,
 a:visited {
     text-decoration: none;
 }
 
-p {
-    margin: 0.75rem 0;
+a {
+    color: #fff;
+    padding: 0.5em;
+    transition: .3s linear;
+}
+
+a:hover {
+    color: #4bb3d3;
 }
 
 ul,
@@ -61,56 +50,86 @@ li {
     list-style: none;
 }
 
-section,
-footer {
-    padding: 5vw 7vw;
-    margin: auto;
-    overflow: hidden;
+/* Profile Page */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(228deg, #167997, #1841b3, #7723af);
+    background-size: 200% 200%;
+    animation: backgroundgradient 21s ease infinite;
 }
 
-/* Utils */
-
-.whiteText {
-    color: white;
+#card {
+    font-size: 1.75rem;
+    opacity: 1;
+    animation-name: fade;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: #18191c;
+    border-radius: 5px;
+    min-height: 50vh;
+    width: 50vw;
 }
 
-.p1 {
+#avatar {
+    display: inline-flex;
+    padding: 8px;
+    background: linear-gradient(228deg, #167997, #1841b3, #7723af);
+    background-size: 200% 200%;
+    animation: backgroundgradient 21s ease infinite;
+    border-radius: 50%;
+    margin: 3rem 0;
+}
+
+#avatar img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#name {
+    color: #3bccf8;
+    font-weight: 700;
+}
+
+#desc {
+    color: rgb(216, 216, 216);
+    font-weight: 400;
+}
+
+#seemore {
+    letter-spacing: -1px;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+#seemore a {
+    color: #505050;
+}
+
+#seemore a:hover {
+    color: #616161;
+}
+
+/* Skills, Tools and Experience */
+
+#back {
+    position: absolute;
     padding: 1rem;
 }
 
-.divider {
-    background: rgba(144, 144, 144, 0.5);
-    content: '';
-    display: inline-block;
-    height: 1px;
-    margin-top: 1.5em;
-    width: 6em;
-    padding: 0 0 0 3em;
-}
+/* Keyframed Animations */
 
-.dividerWhite {
-    background: #ffffff;
-    content: '';
-    display: inline-block;
-    height: 1px;
-    margin-top: 1.5em;
-    width: 6em;
-    padding: 0 0 0 3em;
-}
-
-/* Splash Page */
-
-#splash {
-    height: 100vh;
-    background: linear-gradient(228deg, #167997, #1841b3, #7723af);
-    background-size: 600% 600%;
-    -webkit-animation: splashBG 21s ease infinite;
-    -moz-animation: splashBG 21s ease infinite;
-    -o-animation: splashBG 21s ease infinite;
-    animation: splashBG 21s ease infinite;
-}
-
-@-webkit-keyframes splashBG {
+@keyframes backgroundgradient {
     0% {
         background-position: 91% 0
     }
@@ -124,64 +143,7 @@ footer {
     }
 }
 
-@-moz-keyframes splashBG {
-    0% {
-        background-position: 91% 0
-    }
-
-    50% {
-        background-position: 10% 100%
-    }
-
-    100% {
-        background-position: 91% 0
-    }
-}
-
-@-o-keyframes splashBG {
-    0% {
-        background-position: 91% 0
-    }
-
-    50% {
-        background-position: 10% 100%
-    }
-
-    100% {
-        background-position: 91% 0
-    }
-}
-
-@keyframes splashBG {
-    0% {
-        background-position: 91% 0
-    }
-
-    50% {
-        background-position: 10% 100%
-    }
-
-    100% {
-        background-position: 91% 0
-    }
-}
-
-#splashFeature {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.75rem;
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-}
-
-@keyframes fadeInOpacity {
+@keyframes fade {
     0% {
         opacity: 0;
     }
@@ -189,82 +151,4 @@ footer {
     100% {
         opacity: 1;
     }
-}
-
-#splash .mainText {
-    color: white;
-    font-size: 4vw;
-}
-
-#splash .name {
-    color: #DB504A;
-    font-size: 6vw;
-    font-family: 'Merci Heart Brush';
-    font-weight: normal;
-    font-style: normal;
-}
-
-#splash ul li a {
-    position: absolute;
-    top: 90%;
-    color: white;
-}
-
-/* About */
-
-#about img {
-    width: 50%;
-    height: auto;
-    border-radius: 5px;
-    display: block;
-}
-
-#about div {
-    display: flex;
-}
-
-/* Projects */
-
-#projects {
-    background-attachment: fixed, fixed;
-    background-image: url(/assets/img/proj-bg.jpg);
-    filter: brightness(120%);
-    background-size: cover, cover;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-}
-
-.repo,
-.desc {
-    display: flex;
-    flex: 2;
-    padding: 0 1vw;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-/* Footer */
-
-footer {
-    padding: 6em 0 6em 0;
-    background-color: #4686a0;
-    color: rgba(255, 255, 255, 0.75);
-    background-attachment: fixed, fixed, fixed;
-    background-image: url(/assets/img/overlay2.png), url(/assets/img/overlay4.svg), linear-gradient(228deg, #1e9fc7, #1d50db, #9222dd);
-    background-position: top left, center center, center center;
-    background-size: auto, cover, cover;
-    text-align: center;
-}
-
-footer p {
-    margin: auto;
-}
-
-footer a {
-    color: #fff;
 }
