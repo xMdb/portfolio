@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="preload" href="./assets/css/main.css" as="style">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="shortcut icon" href="./assets/img/favicon.ico">
@@ -16,13 +17,15 @@
 <body>
     <main>
         <div id="card">
+
+            <!-- Main Profile -->
             <section id="profile">
                 <div id="avatar">
                     <img draggable="false" src="./assets/img/avatar.png" alt="Profile Picture">
                 </div>
                 <div id="name">Matthew Griffin</div>
                 <div id="desc">Developer & Aspiring IT Professional</div>
-                <div id="seemore"><a href="#" rel="noopener noreferrer">(click to learn more)</a></div>
+                <div id="learnmore"><a href="#" rel="noopener noreferrer">(click to learn more)</a></div>
                 <div id="socials">
                     <a target="_blank" href="mailto:matt@mgrif.xyz" rel="noopener noreferrer"><i
                             class="fas fa-envelope hvr-float"></i></a>
@@ -36,12 +39,57 @@
                             class="fab fa-youtube hvr-float"></i></a>
                 </div>
             </section>
-            <section id="about">
-                <div id="back"><a href="#" rel="noopener noreferrer"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <nav>
+                    <div id="back"><a href="#" rel="noopener noreferrer"><i class="fas fa-long-arrow-alt-left"></i></a>
+                    </div>
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#experience" rel="noopener noreferrer">Experience</a></li>
+                            <li><a href="#skills" rel="noopener noreferrer">Skills</a></li>
+                            <li><a href="#tools" rel="noopener noreferrer">Tools</a></li>
+                            <li><a href="#projects" rel="noopener noreferrer">Projects</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="experience">
+                    <h1>Digital Creator</h1>
+                    <h2>June 2015 to Current</h2>
+                    <p>I have used programs such as Camtasia Studio, Adobe Premiere Pro, and Adobe After Effects to
+                        create various videos on my YouTube channel, for personal projects, and school projects.</p>
+                    <h1>Digital Artist & Participation in Digital Excellence</h1>
+                    <h2>Febuary 2018 to Current</h2>
+                    <p>I have experience with the Adobe Creative Suite and have composed numerous digital artworks under
+                        the digital excellence program at my school.</p>
+                    <h1>Voluntary Technical Crew & Certificate II in Creative Industries (Technical Services)</h1>
+                    <h2>April 2019 to Current</h2>
+                    <p>In tech crew, I partake in roles such as stage management, production and event management,
+                        rigging,
+                        lighting, sound, and technical directing. Each role brings significant responsibilites in
+                        regards to ensuring each production and event runs smoothly. I have been studying the
+                        Certificate II
+                        since Febuary 2021.</p>
+                    <h1>Customer Service</h1>
+                    <h2>April 2020 to Current</h2>
+                    <p>I am currently employed at Coles in the customer service department and I work closely with many
+                        different customers to assist them with their needs.</p>
+                </div>
+                <div id="skills">
+                    <h1>Digital Expertise</h1>
+                    <ul>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+                <div id="tools">
+
                 </div>
             </section>
+
         </div>
     </main>
+
 </body>
 
 <script src="./assets/js/main.js"></script>

@@ -84,7 +84,7 @@ main {
     padding: 8px;
     background: linear-gradient(228deg, #167997, #1841b3, #7723af);
     background-size: 200% 200%;
-    animation: backgroundgradient 21s ease infinite;
+    animation: backgroundgradient 10s ease infinite;
     border-radius: 50%;
     margin: 3rem 0;
 }
@@ -106,25 +106,41 @@ main {
     font-weight: 400;
 }
 
-#seemore {
+#learnmore {
     letter-spacing: -1px;
     font-size: 1rem;
     padding-bottom: 2rem;
 }
 
-#seemore a {
+#learnmore a {
     color: #505050;
 }
 
-#seemore a:hover {
+#learnmore a:hover {
     color: #616161;
 }
 
-/* Skills, Tools and Experience */
+/* Portfolio */
 
 #back {
-    position: absolute;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    flex: 1;
+}
+
+nav ul li {
+    display: inline-block;
     padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#skills ul li {
+    list-style: circle inside;
 }
 
 /* Keyframed Animations */
