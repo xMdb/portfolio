@@ -21,17 +21,18 @@ $(document).ready(function () {
     return false;
   });
 
-  $(function () {
-    $("#tabs").tabs();
-  });
+  $('#tabs a').click(function () {
 
-  $('#tabs').tabs({
-    create: function() {
-        var widget = $(this).data('tabs');
-        $(window).on('hashchange', function() {
-            widget.option('active', widget._getIndex(location.hash));
-        });
-    }
-});
+    // Check for active
+    $('#tabs li').removeClass('active');
+    $(this).parent().addClass('active');
+
+    // Display active tab
+    const currentTab = $(this).attr('href');
+    $('#tabs-content div').fadeOut(1000);
+    $(currentTab).show();
+
+    return false;
+  });
 
 });

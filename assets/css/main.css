@@ -68,7 +68,7 @@ main {
 #card {
     font-size: 1.75rem;
     opacity: 1;
-    animation-name: fade;
+    animation-name: fadeIn;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1s;
@@ -143,6 +143,11 @@ nav ul li {
     list-style: circle inside;
 }
 
+#tabs-content div:not(:first-child) {
+    display: none;
+    animation: fadeIn 1s ease-in;
+  }
+
 /* Keyframed Animations */
 
 @keyframes backgroundgradient {
@@ -159,7 +164,7 @@ nav ul li {
     }
 }
 
-@keyframes fade {
+@keyframes fadeIn {
     0% {
         opacity: 0;
     }
