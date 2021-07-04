@@ -22,15 +22,15 @@ $(document).ready(function () {
   });
 
   $('#tabs a').click(function () {
-
     // Check for active
     $('#tabs li').removeClass('active');
     $(this).parent().addClass('active');
-
     // Display active tab
     const currentTab = $(this).attr('href');
-    $('#tabs-content div').fadeOut(1000);
-    $(currentTab).show();
+    $('#tabs-content div').fadeOut(100);
+    setTimeout(() => {
+      $(currentTab).fadeIn();
+    }, 100);
 
     return false;
   });
