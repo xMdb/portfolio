@@ -78,6 +78,7 @@ main {
     border-radius: 5px;
     min-height: 50vh;
     width: 50vw;
+    padding: 0 0 1rem;
 }
 
 #avatar {
@@ -109,16 +110,16 @@ main {
 
 #learnmore {
     letter-spacing: -1px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-bottom: 2rem;
 }
 
 #learnmore a {
-    color: #505050;
+    color: #797979;
 }
 
 #learnmore a:hover {
-    color: #616161;
+    color: #4d4d4d;
 }
 
 /* Portfolio */
@@ -130,6 +131,7 @@ main {
 nav {
     display: flex;
     justify-content: center;
+    text-align: center;
     color: #fff;
     flex: 1;
 }
@@ -138,34 +140,11 @@ nav ul li {
     display: inline-block;
     padding: 1rem;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 #tabs-content {
-    text-align: center;
     color: #fff;
-}
-
-h1 {
-    font-size: 2rem;
-    line-height: 1em;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-family: 'Whitney', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #acacac;
-}
-
-p {
-    font-size: 1rem;
-    padding: 1rem;
-}
-
-h1,
-h2 {
-    padding: 0.5rem 0;
 }
 
 .active {
@@ -178,8 +157,116 @@ h2 {
     display: none;
 }
 
+/* Experience */
+
+#experience h1 {
+    padding: 0.25rem 1rem;
+    font-size: 1.75rem;
+    line-height: 1em;
+}
+
+#experience h2 {
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    font-family: 'Whitney', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #acacac;
+}
+
+#experience p {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Skills */
+
+#skills h1 {
+    padding: 1rem;
+    font-size: 1.75rem;
+    line-height: 1em;
+}
+
 #skills ul li {
+    font-size: 1.25rem;
+    font-family: 'Whitney', sans-serif;
     list-style: circle inside;
+    color: #acacac;
+    padding: 0.1rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#skills .small {
+    font-size: 0.75em;
+}
+
+/* Tools */
+
+#tools div {
+    display: block !important;
+}
+
+#tools i {
+    padding: 0.25em;
+    transition: .3s linear;
+}
+
+.devicon-javascript-plain:hover {
+    color: #FFD600;
+}
+
+.devicon-html5-plain:hover {
+    color: #E65100;
+}
+
+.devicon-css3-plain:hover {
+    color: #0277BD;
+}
+
+.devicon-nodejs-plain:hover {
+    color: #388E3C;
+}
+
+.devicon-npm-original-wordmark:hover {
+    color: #D50000;
+}
+
+.devicon-chrome-plain:hover {
+    animation: chrome-colours 5s infinite;
+}
+
+.devicon-github-original:hover {
+    color: rgb(122, 122, 122);
+}
+
+.devicon-git-plain:hover {
+    color: #F4511E;
+}
+
+.devicon-vscode-plain:hover {
+    color: #29B6F6
+}
+
+.fa-discord:hover {
+    color: #5865F2;
+}
+
+.devicon-windows8-original:hover {
+    color: #00B0FF;
+}
+
+.devicon-linux-plain:hover {
+    color: #FFC107;
+}
+
+.devicon-ubuntu-plain:hover {
+    color: #E64A19;
+}
+
+.devicon-raspberrypi-line:hover {
+    color: #FF4081;
 }
 
 /* Keyframed Animations */
@@ -205,5 +292,27 @@ h2 {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes chrome-colours {
+    0% {
+        color: #3cba54;
+    }
+
+    25% {
+        color: #f4c20d;
+    }
+
+    50% {
+        color: #db3236
+    }
+
+    75% {
+        color: #4885ed;
+    }
+
+    100% {
+        color: #db3236;
     }
 }
