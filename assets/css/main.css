@@ -271,91 +271,113 @@ nav ul li {
 }
 
 [tooltip]:hover:before,
-[tooltip]:hover:after {
+[tooltip]:hover:after,
+[tooltip]:active:before,
+[tooltip]:active:after {
     visibility: visible;
     opacity: 1;
 }
 
-[tooltip]:hover:before {
+[tooltip]:hover:before,
+[tooltip]:active:before {
     transition-delay: 0.3s;
     transform: translate(-50%, -5px) scale(1);
 }
 
-[tooltip]:hover:after {
+[tooltip]:hover:after,
+[tooltip]:active:after {
     transition-delay: 0.5s;
     transition-duration: 0.2s;
     transform: translateX(-50%) scaleY(1);
 }
 
-.devicon-javascript-plain:hover {
+.devicon-javascript-plain:hover,
+.devicon-javascript-plain:active {
     color: #FFD600;
 }
 
-.devicon-html5-plain:hover {
+.devicon-html5-plain:hover,
+.devicon-html5-plain:active {
     color: #E65100;
 }
 
-.devicon-css3-plain:hover {
+.devicon-css3-plain:hover,
+.devicon-css3-plain:active {
     color: #0277BD;
 }
 
-.devicon-jquery-plain:hover {
+.devicon-jquery-plain:hover,
+.devicon-jquery-plain:active {
     color: #3498DB;
 }
 
-.devicon-nodejs-plain:hover {
+.devicon-nodejs-plain:hover,
+.devicon-nodejs-plain:active {
     color: #388E3C;
 }
 
-.devicon-npm-original-wordmark:hover {
+.devicon-npm-original-wordmark:hover,
+.devicon-npm-original-wordmark:active {
     color: #D50000;
 }
 
-.devicon-chrome-plain:hover {
+.devicon-chrome-plain:hover,
+.devicon-chrome-plain:active {
     animation: chrome-colours 5s infinite;
 }
 
-.devicon-github-original:hover {
+.devicon-github-original:hover,
+.devicon-github-original:active {
     color: #919191;
 }
 
-.devicon-git-plain:hover {
+.devicon-git-plain:hover,
+.devicon-git-plain:active {
     color: #F4511E;
 }
 
-.devicon-vscode-plain:hover {
+.devicon-vscode-plain:hover,
+.devicon-vscode-plain:active {
     color: #29B6F6
 }
 
-.fa-discord:hover {
+.fa-discord:hover,
+.fa-discord:active {
     color: #5865F2;
 }
 
-.devicon-photoshop-plain:hover {
+.devicon-photoshop-plain:hover,
+.devicon-photoshop-plain:active {
     color: #31A8FF;
 }
 
-.devicon-illustrator-plain:hover {
+.devicon-illustrator-plain:hover,
+.devicon-illustrator-plain:active {
     color: #FF9900;
 }
 
-.devicon-premierepro-plain:hover {
+.devicon-premierepro-plain:hover,
+.devicon-premierepro-plain:active {
     color: #4949b6;
 }
 
-.devicon-windows8-original:hover {
+.devicon-windows8-original:hover,
+.devicon-windows8-original:active {
     color: #00B0FF;
 }
 
-.devicon-linux-plain:hover {
+.devicon-linux-plain:hover,
+.devicon-linux-plain:active {
     color: #FFC107;
 }
 
-.devicon-ubuntu-plain:hover {
+.devicon-ubuntu-plain:hover,
+.devicon-ubuntu-plain:active {
     color: #E64A19;
 }
 
-.devicon-raspberrypi-line:hover {
+.devicon-raspberrypi-line:hover,
+.devicon-raspberrypi-line:active {
     color: #FF4081;
 }
 
