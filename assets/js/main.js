@@ -21,13 +21,13 @@ $(document).ready(function () {
     return false;
   });
 
-  $('#tabs a').click(function () {
+  $("#tabs a").click(function () {
     // Check for active
-    $('#tabs li').removeClass('active');
-    $(this).parent().addClass('active');
+    $("#tabs li").removeClass("active");
+    $(this).parent().addClass("active");
     // Display active tab
-    const currentTab = $(this).attr('href');
-    $('#tabs-content div').fadeOut(100);
+    const currentTab = $(this).attr("href");
+    $("#tabs-content div").fadeOut(100);
     setTimeout(() => {
       $(currentTab).fadeIn();
     }, 100);

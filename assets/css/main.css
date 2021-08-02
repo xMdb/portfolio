@@ -67,7 +67,7 @@ main {
 }
 
 #card {
-    font-size: 1.75rem;
+    font-size: 1.5vw;
     opacity: 1;
     animation-name: fadeIn;
     animation-iteration-count: 1;
@@ -78,7 +78,7 @@ main {
     border-radius: 5px;
     min-height: 50vh;
     width: 50vw;
-    padding: 0 0 1rem;
+    padding: 0 0 3rem;
 }
 
 #avatar {
@@ -148,9 +148,16 @@ nav ul li {
 }
 
 .active {
-    text-decoration: underline #fff;
+    text-decoration-line: underline;
+    text-decoration-color: #fff;
     text-underline-offset: 10px;
     text-decoration-thickness: 2px;
+    transition: .3s linear;
+}
+
+.active:hover {
+    text-decoration-color: #4bb3d3;
+    transition: .3s linear;
 }
 
 #tabs-content div:not(:first-child) {
@@ -161,13 +168,13 @@ nav ul li {
 
 #experience h1 {
     padding: 0.25rem 1rem;
-    font-size: 1.75rem;
+    font-size: 3vh;
     line-height: 1em;
 }
 
 #experience h2 {
     padding: 0 1rem;
-    font-size: 1.25rem;
+    font-size: 2vh;
     font-family: 'Whitney', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -176,7 +183,7 @@ nav ul li {
 
 #experience p {
     padding: 1rem 3rem;
-    font-size: 1rem;
+    font-size: 1.75vh;
     text-align: center;
 }
 
@@ -184,17 +191,16 @@ nav ul li {
 
 #skills h1 {
     padding: 1rem;
-    font-size: 1.75rem;
+    font-size: 3vh;
     line-height: 1em;
 }
 
 #skills ul li {
-    font-size: 1.25rem;
+    font-size: 1.75vh;
     font-family: 'Whitney', sans-serif;
     list-style: circle inside;
     color: #acacac;
     padding: 0.1rem 1rem;
-    font-size: 1rem;
     text-align: center;
 }
 
@@ -204,13 +210,81 @@ nav ul li {
 
 /* Tools */
 
-#tools div {
-    display: block !important;
+#tools {
+    cursor: default;
+}
+
+#tools h1 {
+    padding: 1rem;
+    font-size: 3vh;
+    line-height: 1em;
 }
 
 #tools i {
     padding: 0.25em;
     transition: .3s linear;
+}
+
+[tooltip] {
+    position: relative;
+    z-index: 10;
+    font-family: 'Whitney', sans-serif;
+}
+
+[tooltip]:before,
+[tooltip]:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 50%;
+    bottom: calc(100% + 5px);
+    pointer-events: none;
+    transition: 0.2s;
+    will-change: transform;
+}
+
+[tooltip]:before {
+    content: attr(tooltip);
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(59, 72, 80, 0.9);
+    background-image: linear-gradient(30deg,
+            rgba(59, 72, 80, 0.44),
+            rgba(59, 68, 75, 0.44),
+            rgba(60, 82, 88, 0.44));
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transform: translate(-50%, -5px) scale(0.5);
+}
+
+[tooltip]:after {
+    content: '';
+    border-style: solid;
+    border-width: 5px 5px 0px 5px;
+    border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+    transition-duration: 0s;
+    transform-origin: top;
+    transform: translateX(-50%) scaleY(0);
+}
+
+[tooltip]:hover:before,
+[tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+[tooltip]:hover:before {
+    transition-delay: 0.3s;
+    transform: translate(-50%, -5px) scale(1);
+}
+
+[tooltip]:hover:after {
+    transition-delay: 0.5s;
+    transition-duration: 0.2s;
+    transform: translateX(-50%) scaleY(1);
 }
 
 .devicon-javascript-plain:hover {
@@ -223,6 +297,10 @@ nav ul li {
 
 .devicon-css3-plain:hover {
     color: #0277BD;
+}
+
+.devicon-jquery-plain:hover {
+    color: #3498DB;
 }
 
 .devicon-nodejs-plain:hover {
@@ -238,7 +316,7 @@ nav ul li {
 }
 
 .devicon-github-original:hover {
-    color: rgb(122, 122, 122);
+    color: #919191;
 }
 
 .devicon-git-plain:hover {
@@ -251,6 +329,18 @@ nav ul li {
 
 .fa-discord:hover {
     color: #5865F2;
+}
+
+.devicon-photoshop-plain:hover {
+    color: #31A8FF;
+}
+
+.devicon-illustrator-plain:hover {
+    color: #FF9900;
+}
+
+.devicon-premierepro-plain:hover {
+    color: #4949b6;
 }
 
 .devicon-windows8-original:hover {
