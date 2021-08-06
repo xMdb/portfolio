@@ -4,7 +4,7 @@ $(document).ready(function () {
   $("#portfolio").hide();
 
   // Show other page on learn more click
-  $("#learnmore a").click(function () {
+  $("#learnMore a").click(function () {
     $("#profile").fadeOut(1000);
     setTimeout(() => {
       $("#portfolio").fadeIn();
@@ -13,7 +13,7 @@ $(document).ready(function () {
   });
 
   // Show profile on back arrow click
-  $("#back").click(function () {
+  $(".back").click(function () {
     $("#portfolio").fadeOut(1000);
     setTimeout(() => {
       $("#profile").fadeIn();
@@ -27,7 +27,7 @@ $(document).ready(function () {
     $(this).parent().addClass("active");
     // Display active tab
     const currentTab = $(this).attr("href");
-    $("#tabs-content div").fadeOut(100);
+    $("#tabsContent div").fadeOut(100);
     setTimeout(() => {
       $(currentTab).fadeIn();
     }, 100);

@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
-@import url('https://fonts.cdnfonts.com/css/whitney-2');
+/* By Matthew Griffin - xMdb */
+
+/* Main Styles */
 
 * {
     padding: 0;
@@ -30,6 +31,14 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+h2 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+}
+
 a,
 a:visited {
     text-decoration: none;
@@ -51,6 +60,29 @@ li {
     list-style: none;
 }
 
+/* Hover Animation from hover.css (https://ianlunn.github.io/Hover/) */
+
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
+}
+
+.hvr-float:active,
+.hvr-float:focus,
+.hvr-float:hover {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
 /* Profile Page */
 
 main {
@@ -63,7 +95,7 @@ main {
     height: 100vh;
     background: linear-gradient(228deg, #167997, #1841b3, #7723af);
     background-size: 200% 200%;
-    animation: backgroundgradient 21s ease infinite;
+    animation: backgroundGradient 21s ease infinite;
 }
 
 #card {
@@ -78,7 +110,6 @@ main {
     border-radius: 5px;
     min-height: 50vh;
     width: 50vw;
-    padding: 0 0 3rem;
 }
 
 #avatar {
@@ -86,45 +117,43 @@ main {
     padding: 8px;
     background: linear-gradient(228deg, #167997, #1841b3, #7723af);
     background-size: 200% 200%;
-    animation: backgroundgradient 10s ease infinite;
+    animation: backgroundGradient 10s ease infinite;
     border-radius: 50%;
     margin: 3rem 0;
 }
 
 #avatar img {
     display: block;
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
 }
 
 #name {
     color: #3bccf8;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #desc {
     color: rgb(216, 216, 216);
-    font-weight: 400;
 }
 
-#learnmore {
+#learnMore {
     letter-spacing: -1px;
     font-size: 1.1rem;
     padding-bottom: 2rem;
 }
 
-#learnmore a {
-    color: #797979;
+#learnMore a {
+    color: #b6b6b6;
+    font-weight: 300;
 }
 
-#learnmore a:hover {
-    color: #4d4d4d;
+#learnMore a:hover {
+    color: #6b6b6b;
 }
 
 /* Portfolio */
 
-#back {
+.arrow {
     display: flex;
 }
 
@@ -143,7 +172,11 @@ nav ul li {
     text-align: center;
 }
 
-#tabs-content {
+nav ul li a {
+    font-weight: 600;
+}
+
+#tabsContent {
     color: #fff;
 }
 
@@ -160,7 +193,7 @@ nav ul li {
     transition: .3s linear;
 }
 
-#tabs-content div:not(:first-child) {
+#tabsContent div:not(:first-child) {
     display: none;
 }
 
@@ -175,8 +208,6 @@ nav ul li {
 #experience h2 {
     padding: 0 1rem;
     font-size: 2vh;
-    font-family: 'Whitney', sans-serif;
-    font-weight: 700;
     text-transform: uppercase;
     color: #acacac;
 }
@@ -197,9 +228,9 @@ nav ul li {
 
 #skills ul li {
     font-size: 1.75vh;
-    font-family: 'Whitney', sans-serif;
+    font-weight: 300;
     list-style: circle inside;
-    color: #acacac;
+    color: #e4e4e4;
     padding: 0.1rem 1rem;
     text-align: center;
 }
@@ -225,10 +256,12 @@ nav ul li {
     transition: .3s linear;
 }
 
+/* Tooltip */
+
 [tooltip] {
     position: relative;
     z-index: 10;
-    font-family: 'Whitney', sans-serif;
+    font-weight: 600;
 }
 
 [tooltip]:before,
@@ -291,6 +324,8 @@ nav ul li {
     transform: translateX(-50%) scaleY(1);
 }
 
+/* Icon Hover Colours */
+
 .devicon-javascript-plain:hover,
 .devicon-javascript-plain:active {
     color: #FFD600;
@@ -323,7 +358,7 @@ nav ul li {
 
 .devicon-chrome-plain:hover,
 .devicon-chrome-plain:active {
-    animation: chrome-colours 5s infinite;
+    animation: chromeColours 5s linear infinite;
 }
 
 .devicon-github-original:hover,
@@ -381,9 +416,38 @@ nav ul li {
     color: #FF4081;
 }
 
-/* Keyframed Animations */
+/* Projects */
 
-@keyframes backgroundgradient {
+#projects div {
+    display: inline-block !important;
+}
+
+
+/* Footer */
+
+footer h2,
+footer a {
+    font-weight: 800;
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    flex: 1;
+}
+
+.footerLeft,
+.footerRight {
+    display: inline-block;
+    padding: 2rem 1rem 1rem;
+}
+
+/* Keyframe Animations */
+
+@keyframes backgroundGradient {
     0% {
         background-position: 91% 0
     }
@@ -407,7 +471,7 @@ nav ul li {
     }
 }
 
-@keyframes chrome-colours {
+@keyframes chromeColours {
     0% {
         color: #3cba54;
     }
