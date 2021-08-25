@@ -394,7 +394,15 @@ nav ul li a {
 /* Projects */
 
 #projects div {
-   display: inline-block !important;
+   display: flex !important;
+   border: 1px slategray solid;
+   text-align: center;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+   border-radius: 25px;
+   margin: 0 5rem 0;
 }
 
 /* Footer */
