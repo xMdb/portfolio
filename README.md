@@ -8,6 +8,7 @@ This is my main website repository, located at https://mgrif.xyz and https://xmd
 - [2nd Version](https://5e5b8c7afe57b200083383e8--mgrif-portfolio.netlify.app/) - March 2020
 - [1st Redesign](https://5f4630e5ceed5a0008698725--mgrif-portfolio.netlify.app/) - August 2020
 - [2nd Redesign](https://60acfe051f0eae0007b1eebc--mgrif-portfolio.netlify.app/) - May 2021
-- [3rd Redesign](https://xmdb.is-a.dev) - Current Version
+- [3rd Redesign](https://xmdb.is-a.dev) - August 2021 (finished)
+- [4th Redesign (rewrite in GatsbyJS)](https://development.mgrif.xyz) - Work in Progress
 
 Every version I improve on my web development skills and utilise new concepts. I am also learning new things all the time and I update my website to reflect that.
