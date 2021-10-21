@@ -1,11 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-export default function Home() {
-   return (
-      <>
-         <center>
-            <h1>sup world</h1>
-         </center>
-      </>
-   );
-}
+const StyledMainContainer = styled.main`
+   counter-reset: section;
+`;
+
+const IndexPage = ({ location }) => (
+   <>
+      <h1>Heya</h1>
+   </>
+);
+
+IndexPage.propTypes = {
+   location: PropTypes.object.isRequired,
+};
+
+export default IndexPage;
