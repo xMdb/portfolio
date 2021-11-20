@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
-const useMedia = (queries, values, defaultValue) => {
+const useMedia = (queries: Array<string>, values: boolean[], defaultValue: boolean) => {
    const [value, setValue] = useState(null);
 
    useEffect(() => {
       const mediaQueryLists = queries.map((q) => window.matchMedia(q));
 
-      const getValue = () => {
+      const getValue: any = () => {
          const index = mediaQueryLists.findIndex((mql) => mql.matches);
          return typeof values[index] !== 'undefined' ? values[index] : defaultValue;
       };

@@ -1,20 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Thumbnail from '../images/thumbnail.png';
-import {
-   url,
-   email,
-   defaultDescription,
-   defaultTitle,
-   socials,
-   keywords,
-   legalName,
-   foundingDate,
-   logo,
-} from '../config';
+import { url, email, defaultDescription, defaultTitle, socials, keywords, legalName, foundingDate, logo } from '../config';
 
-const Meta = ({ title = defaultTitle, description = defaultDescription, location = '' }) => {
-   const structuredDataOrganization = `{ 
+const Meta = ({ title = defaultTitle, description = defaultDescription, location = '' }: MetaProps) => {
+   const structuredDataOrganization: string = `{ 
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"legalName": "${legalName}",
@@ -67,5 +57,11 @@ const Meta = ({ title = defaultTitle, description = defaultDescription, location
       </Helmet>
    );
 };
+
+interface MetaProps {
+   title?: string;
+   description?: string;
+   location?: string;
+}
 
 export default Meta;
