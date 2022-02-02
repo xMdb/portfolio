@@ -1,26 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Layout, Hero, About, Jobs, Featured, Projects, Contact } from '@components';
+import { Nav } from '../components/Nav';
+import { Meta } from '../components/Meta';
+import { Hero } from '../components/Hero';
 
-const StyledMainContainer = styled.main`
-   counter-reset: section;
-`;
+const Index = () => {
+	return (
+		<>
+			<Meta />
+			<Nav />
+			<Hero />
+		</>
+	);
+};
 
-const IndexPage = ({ location }: IndexProps) => (
-   <Layout location={location}>
-      <StyledMainContainer className="fillHeight">
-         <Hero />
-         <About />
-         <Jobs />
-         <Featured />
-         <Projects />
-         <Contact />
-      </StyledMainContainer>
-   </Layout>
-);
-
-interface IndexProps {
-   location: object;
-}
-
-export default IndexPage;
+export default Index;
