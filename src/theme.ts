@@ -19,6 +19,23 @@ const styles = {
 	},
 };
 
+const components = {
+	Button: {
+		variants: {
+			outline: () => ({
+				fontFamily: 'heading',
+				fontWeight: 'regular',
+				color: 'teal.100',
+				borderColor: 'teal.100',
+				borderRadius: '5px',
+				_hover: {
+					borderColor: 'teal.300',
+				},
+			}),
+		},
+	},
+};
+
 const colors = {
 	gray: {
 		200: '#AFAFAF',
@@ -28,6 +45,7 @@ const colors = {
 	teal: {
 		100: '#64DFDF',
 		200: '#80FFDB',
+		300: '#56BBBB',
 	},
 };
 
@@ -35,6 +53,7 @@ const theme = extendTheme({
 	config,
 	fonts,
 	styles,
+	components,
 	colors,
 });
 

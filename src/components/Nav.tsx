@@ -1,20 +1,19 @@
-import { Box, Flex, Text, IconButton, Stack, Link, useDisclosure, Container } from '@chakra-ui/react';
+import { Box, Flex, Text, IconButton, Stack, Link, useDisclosure, Button, chakra } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import NextLink from 'next/link';
 import { Logo } from './Logo';
 
 export const Nav = () => {
 	return (
-		<Box>
-			<Flex py={30} px={[5, 10, 15]} display={{ base: 'none', md: 'flex' }}>
-				<Flex justify={{ base: 'center', md: 'start' }}>
-					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-						<Logo />
-						<DesktopNav />
-					</Flex>
+		<Box maxHeight="10vh">
+			<Box minH="60px" py={30} px={[5, 25, 50]} align="center" display={{ base: 'none', md: 'flex' }}>
+				<Logo />
+				<Flex display={{ base: 'none', md: 'flex' }} justifyContent="flex-end" flex={1}>
+					<DesktopNav />
 				</Flex>
-			</Flex>
+			</Box>
 			<MobileNav />
 		</Box>
 	);
@@ -22,23 +21,37 @@ export const Nav = () => {
 
 const DesktopNav = () => {
 	return (
-		<Stack direction={'row'} spacing={4}>
-			{NavItems.map((navItem) => (
-				<Box key={navItem.label}>
+		<Box display="inline-flex">
+			{NavItems.map(({ label, order, href }) => (
+				<Box key={label} mt={3}>
 					<Link
-						p={5}
-						href={navItem.href ?? '#'}
+						p={2}
+						m={23}
+						href={href ?? '#'}
 						fontSize="sm"
-						fontWeight="bold"
+						fontFamily="heading"
 						color="white"
 						_hover={{
-							color: 'green.200',
+							color: 'teal.100',
 						}}>
-						{navItem.label}
+						<chakra.span color="teal.100">{order}. </chakra.span>
+						{label}
 					</Link>
 				</Box>
 			))}
-		</Stack>
+			<NextLink href="/resume.pdf" passHref>
+				<Button
+					mt={1.5}
+					ml={25}
+					variant="outline"
+					_hover={{
+						color: 'teal.300',
+						textDecoration: 'none',
+					}}>
+					Resume
+				</Button>
+			</NextLink>
+		</Box>
 	);
 };
 const MobileNav = () => {
@@ -52,7 +65,7 @@ const MobileNav = () => {
 				initial={false}
 				onAnimationStart={() => setHidden(false)}
 				onAnimationComplete={() => setHidden(!isOpen)}
-				animate={{ width: isOpen ? 375 : 0 }}
+				animate={{ width: isOpen ? 365 : 0 }}
 				style={{
 					background: '#353535',
 					overflow: 'hidden',
@@ -62,49 +75,60 @@ const MobileNav = () => {
 					height: '100vh',
 					top: '0',
 				}}>
-				<Stack justify="center" alignItems="center">
+				<Stack justify="center" alignItems="center" align="center" my="25vh">
 					{NavItems.map((navItem) => (
 						<MobileNavItem key={navItem.label} {...navItem} />
 					))}
+					<Box>
+						<NextLink href="/resume.pdf" passHref>
+							<Button
+								p={5}
+								mt={4}
+								variant="outline"
+								_hover={{
+									color: 'teal.300',
+									textDecoration: 'none',
+								}}>
+								Resume
+							</Button>
+						</NextLink>
+					</Box>
 				</Stack>
 			</motion.div>
-			<Container
-				minH="60px"
-				py={30}
-				px={[5, 10, 15]}
-				align="center"
-				display={{ base: 'inline-block', md: 'none' }}>
-				<Flex display={{ base: 'flex', md: 'none' }}>
-					<Logo />
-					<Flex display="flex" justifyContent="flex-end" flex={1}>
-						<IconButton
-							{...getButtonProps()}
-							display="inline-flex"
-							icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-							variant="ghost"
-							aria-label="Toggle Navigation"
-						/>
-					</Flex>
+			<Box minH="60px" py={30} px={[5, 10, 15]} align="center" display={{ base: 'flex', md: 'none' }}>
+				<Logo />
+				<Flex display={{ base: 'flex', md: 'none' }} justifyContent="flex-end" flex={1}>
+					<IconButton
+						{...getButtonProps()}
+						display="inline-flex"
+						color="teal.100"
+						icon={isOpen ? <CloseIcon w={4} h={4} /> : <HamburgerIcon w={8} h={8} />}
+						variant="ghost"
+						aria-label="Toggle Navigation"
+					/>
 				</Flex>
-			</Container>
+			</Box>
 		</>
 	);
 };
 
-const MobileNavItem = ({ label, href }: NavItem) => {
+const MobileNavItem = ({ label, order, href }: NavItem) => {
 	return (
-		<Stack spacing={4} align="center">
+		<Stack align="center">
 			<Flex
 				p={2}
-				my={8}
+				m={0.5}
 				as={Link}
 				href={href ?? '#'}
 				justify="space-between"
 				_hover={{
-					color: 'teal.200',
+					color: 'teal.100',
 					textDecoration: 'none',
 				}}>
-				<Text fontWeight={600}>{label}</Text>
+				<Text fontWeight={100} fontFamily="heading" fontSize="2xl">
+					<chakra.span color="teal.100">{order}. </chakra.span>
+					{label}
+				</Text>
 			</Flex>
 		</Stack>
 	);
@@ -112,24 +136,29 @@ const MobileNavItem = ({ label, href }: NavItem) => {
 
 interface NavItem {
 	label: string;
+	order: number;
 	href?: string;
 }
 
 const NavItems: Array<NavItem> = [
 	{
 		label: 'About',
+		order: 1,
 		href: '#',
 	},
 	{
 		label: 'Experience',
+		order: 2,
 		href: '#',
 	},
 	{
 		label: 'Work',
+		order: 3,
 		href: '#',
 	},
 	{
 		label: 'Contact',
+		order: 4,
 		href: '#',
 	},
 ];

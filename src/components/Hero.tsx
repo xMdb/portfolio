@@ -1,14 +1,14 @@
-import { Text, Flex, Heading } from '@chakra-ui/react';
+import { Text, Flex, Heading, Box } from '@chakra-ui/react';
 
 export const Hero = () => {
 	return (
-		<>
+		<Box maxHeight="90vh">
 			{/* Desktop */}
 			<DesktopHero />
 
 			{/* Mobile */}
 			<MobileHero />
-		</>
+		</Box>
 	);
 };
 
