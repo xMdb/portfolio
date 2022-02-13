@@ -777,6 +777,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.2.tgz#f21a1b39e9fc40fd7f315f37687ad6f6f040528a"
   integrity sha512-4LLfZYr5dRsobtC9JNkATL5OwOqrxs2tF29eNljjogxWXm4tlHxRo4dgOFTlWxQOxcj5Zv7dM8IMiSoOqMGy3g==
 
+"@fontsource/space-mono@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-mono/-/space-mono-4.5.1.tgz#0bf138b40532851ba75f0f1e37f2884810707e1f"
+  integrity sha512-uEC+HTYSD8i546pxU35o5JLsPy1LBqpwl+WTUvJfBq56uTQBl6g1PV0DUzgPPMU4ASEoBdqKSMesjvRUhle6Cw==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.3"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.3.tgz#f2564c744b387775b436418491f15fce6601f63e"

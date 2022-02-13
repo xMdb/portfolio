@@ -5,6 +5,11 @@ const config = {
 	useSystemColorMode: false,
 };
 
+const fonts = {
+	heading: 'Space Mono',
+	body: 'Inter',
+};
+
 const styles = {
 	global: {
 		body: {
@@ -16,19 +21,19 @@ const styles = {
 
 const colors = {
 	gray: {
-		200: '#4F4F4F',
-		800: '#1E1E1E',
-		900: '#181818',
+		200: '#AFAFAF',
+		800: '#353535',
+		900: '#252525',
 	},
-	green: {
-		200: '#00E18F',
-		300: '#00C67E',
-		400: '#009861',
+	teal: {
+		100: '#64DFDF',
+		200: '#80FFDB',
 	},
 };
 
 const theme = extendTheme({
 	config,
+	fonts,
 	styles,
 	colors,
 });

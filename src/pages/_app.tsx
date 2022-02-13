@@ -1,4 +1,5 @@
 import '@fontsource/inter';
+import '@fontsource/space-mono';
 
 import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
