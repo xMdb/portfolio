@@ -6,14 +6,14 @@ const config = {
 };
 
 const fonts = {
+	base: 'Inter',
 	heading: 'Space Mono',
-	body: 'Inter',
 };
 
 const styles = {
 	global: {
 		body: {
-			fontFamily: 'body',
+			fontFamily: 'base',
 			bg: 'gray.900',
 		},
 	},

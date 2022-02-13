@@ -1,30 +1,21 @@
-import { Box, Flex, Text, IconButton, Stack, Collapse, Link, useDisclosure } from '@chakra-ui/react';
+import { Box, Flex, Text, IconButton, Stack, Link, useDisclosure, Container } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Logo } from './Logo';
 
 export const Nav = () => {
-	const { isOpen, onToggle } = useDisclosure();
 	return (
 		<Box>
-			<Flex color="white" minH="60px" py={2} px={[10, 130, 196]} align="center">
-				<Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
-					<IconButton
-						onClick={onToggle}
-						icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-						variant="ghost"
-						aria-label="Toggle Navigation"
-						mx={-1}
-					/>
-				</Flex>
-				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+			<Flex py={30} px={[5, 10, 15]} display={{ base: 'none', md: 'flex' }}>
+				<Flex justify={{ base: 'center', md: 'start' }}>
 					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+						<Logo />
 						<DesktopNav />
 					</Flex>
 				</Flex>
 			</Flex>
-
-			<Collapse in={isOpen} animateOpacity>
-				<MobileNav />
-			</Collapse>
+			<MobileNav />
 		</Box>
 	);
 };
@@ -51,25 +42,66 @@ const DesktopNav = () => {
 	);
 };
 const MobileNav = () => {
+	const { getButtonProps, getDisclosureProps, isOpen } = useDisclosure();
+	const [hidden, setHidden] = useState(!isOpen);
 	return (
-		<Stack bg="gray.800" p={4} display={{ md: 'none' }}>
-			{NavItems.map((navItem) => (
-				<MobileNavItem key={navItem.label} {...navItem} />
-			))}
-		</Stack>
+		<>
+			<motion.div
+				{...getDisclosureProps()}
+				hidden={hidden}
+				initial={false}
+				onAnimationStart={() => setHidden(false)}
+				onAnimationComplete={() => setHidden(!isOpen)}
+				animate={{ width: isOpen ? 375 : 0 }}
+				style={{
+					background: '#353535',
+					overflow: 'hidden',
+					whiteSpace: 'nowrap',
+					position: 'absolute',
+					right: '0',
+					height: '100vh',
+					top: '0',
+				}}>
+				<Stack justify="center" alignItems="center">
+					{NavItems.map((navItem) => (
+						<MobileNavItem key={navItem.label} {...navItem} />
+					))}
+				</Stack>
+			</motion.div>
+			<Container
+				minH="60px"
+				py={30}
+				px={[5, 10, 15]}
+				align="center"
+				display={{ base: 'inline-block', md: 'none' }}>
+				<Flex display={{ base: 'flex', md: 'none' }}>
+					<Logo />
+					<Flex display="flex" justifyContent="flex-end" flex={1}>
+						<IconButton
+							{...getButtonProps()}
+							display="inline-flex"
+							icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+							variant="ghost"
+							aria-label="Toggle Navigation"
+						/>
+					</Flex>
+				</Flex>
+			</Container>
+		</>
 	);
 };
 
 const MobileNavItem = ({ label, href }: NavItem) => {
 	return (
-		<Stack spacing={4}>
+		<Stack spacing={4} align="center">
 			<Flex
-				py={2}
+				p={2}
+				my={8}
 				as={Link}
 				href={href ?? '#'}
-				justify={'space-between'}
-				align={'center'}
+				justify="space-between"
 				_hover={{
+					color: 'teal.200',
 					textDecoration: 'none',
 				}}>
 				<Text fontWeight={600}>{label}</Text>
@@ -85,11 +117,19 @@ interface NavItem {
 
 const NavItems: Array<NavItem> = [
 	{
-		label: 'Features',
+		label: 'About',
 		href: '#',
 	},
 	{
-		label: 'About',
+		label: 'Experience',
+		href: '#',
+	},
+	{
+		label: 'Work',
+		href: '#',
+	},
+	{
+		label: 'Contact',
 		href: '#',
 	},
 ];

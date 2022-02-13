@@ -26,30 +26,7 @@ export default {
 			url: 'https://youtube.com/xMdbMatt',
 		},
 	],
-	nav: [
-		{
-			name: 'About',
-			url: '/#about',
-		},
-		{
-			name: 'Experience',
-			url: '/#jobs',
-		},
-		{
-			name: 'Work',
-			url: '/#projects',
-		},
-		{
-			name: 'Contact',
-			url: '/#contact',
-		},
-	],
 	keywords:
 		'developer portfolio, developer, portfolio, matthew griffin, matthew griffin xMdb, xMdb, xMdbMatt, xMdb portfolio, xMdbMatt developer, matthew griffin developer, matt xmdb developer, xmbd developer, xmbd, gatsby portfolio, gatsbyjs portfolio, web development, web developer, webdev, matthew griffin portfolio, built with gatsby, matthew griffin website, xmdb is a dev, mgrif, mgrif xyz, matt g, matthew g, web design, web development designer, matthew designer, matthew griffin designer, figma designer, front end development, back end development, development, reactjs developer, react developer, built with react, react portfolio website, react portfolio, front end developer, back end developer, xmbd matt, xmbdmatt, matty griffin, matty g, xmdb dev',
-	colours: {
-		green: '#64ffda',
-		navy: '#0a192f',
-		darkNavy: '#020c1b',
-	},
 	foundingDate: '2019',
 };

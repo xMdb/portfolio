@@ -1,4 +1,4 @@
-import { Text, Flex } from '@chakra-ui/react';
+import { Text, Flex, Heading } from '@chakra-ui/react';
 
 export const Hero = () => {
 	return (
@@ -24,6 +24,7 @@ const DesktopHero = () => {
 			<Text fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }} fontWeight="black">
 				Hi, I'm Matt.
 			</Text>
+			<Heading>this is a heading in space mono</Heading>
 		</Flex>
 	);
 };
@@ -35,6 +36,7 @@ const MobileHero = () => {
 				<Text fontSize="4xl" fontWeight="black">
 					Heya, I'm Matt.
 				</Text>
+				<Heading>this is a heading in space mono</Heading>
 			</Flex>
 		</Flex>
 	);
