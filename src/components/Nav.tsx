@@ -26,7 +26,7 @@ const DesktopNav = () => {
 				<Box key={label} mt={3}>
 					<Link
 						p={2}
-						m={23}
+						m={5}
 						href={href ?? '#'}
 						fontSize="sm"
 						fontFamily="heading"
@@ -42,10 +42,10 @@ const DesktopNav = () => {
 			<NextLink href="/resume.pdf" passHref>
 				<Button
 					mt={1.5}
-					ml={25}
+					ml={5}
 					variant="outline"
 					_hover={{
-						color: 'teal.300',
+						backgroundColor: 'rgba(86, 187, 187, 0.2)',
 						textDecoration: 'none',
 					}}>
 					Resume
@@ -65,12 +65,13 @@ const MobileNav = () => {
 				initial={false}
 				onAnimationStart={() => setHidden(false)}
 				onAnimationComplete={() => setHidden(!isOpen)}
-				animate={{ width: isOpen ? 365 : 0 }}
+				animate={{ width: isOpen ? 300 : 0 }}
 				style={{
 					background: '#353535',
 					overflow: 'hidden',
 					whiteSpace: 'nowrap',
-					position: 'absolute',
+					position: 'fixed',
+					zIndex: '2',
 					right: '0',
 					height: '100vh',
 					top: '0',
@@ -86,7 +87,7 @@ const MobileNav = () => {
 								mt={4}
 								variant="outline"
 								_hover={{
-									color: 'teal.300',
+									backgroundColor: 'rgba(86, 187, 187, 0.2)',
 									textDecoration: 'none',
 								}}>
 								Resume
@@ -102,6 +103,7 @@ const MobileNav = () => {
 						{...getButtonProps()}
 						display="inline-flex"
 						color="teal.100"
+						zIndex={3}
 						icon={isOpen ? <CloseIcon w={4} h={4} /> : <HamburgerIcon w={8} h={8} />}
 						variant="ghost"
 						aria-label="Toggle Navigation"
