@@ -8,7 +8,7 @@ import { Logo } from './Logo';
 export const Nav = () => {
 	return (
 		<Box maxHeight="10vh">
-			<Box minH="60px" py={30} px={[5, 25, 50]} align="center" display={{ base: 'none', md: 'flex' }}>
+			<Box minH="60px" py={30} px={[5, 25, 50]} textAlign="center" display={{ base: 'none', md: 'flex' }}>
 				<Logo />
 				<Flex display={{ base: 'none', md: 'flex' }} justifyContent="flex-end" flex={1}>
 					<DesktopNav />
@@ -96,7 +96,7 @@ const MobileNav = () => {
 					</Box>
 				</Stack>
 			</motion.div>
-			<Box minH="60px" py={30} px={[5, 10, 15]} align="center" display={{ base: 'flex', md: 'none' }}>
+			<Box minH="60px" py={30} px={[5, 10, 15]} textAlign="center" display={{ base: 'flex', md: 'none' }}>
 				<Logo />
 				<Flex display={{ base: 'flex', md: 'none' }} justifyContent="flex-end" flex={1}>
 					<IconButton
