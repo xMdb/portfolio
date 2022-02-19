@@ -146,21 +146,21 @@ const NavItems: Array<NavItem> = [
 	{
 		label: 'About',
 		order: 1,
-		href: '#',
+		href: '#about',
 	},
 	{
 		label: 'Experience',
 		order: 2,
-		href: '#',
+		href: '#experience',
 	},
 	{
 		label: 'Work',
 		order: 3,
-		href: '#',
+		href: '#work',
 	},
 	{
 		label: 'Contact',
 		order: 4,
-		href: '#',
+		href: '#contact',
 	},
 ];

@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 
 export const Hero = () => {
 	return (
-		<Box maxHeight="90vh">
+		<Box maxHeight="90vh" id="hero">
 			<Flex
 				flexDirection="column"
 				p={30}
@@ -32,10 +32,14 @@ export const Hero = () => {
 							<chakra.span color="gray.200">I'm passionate about IT.</chakra.span>
 						</Text>
 					</Box>
-					<Text fontSize={{ base: 'sm', md: 'lg', lg: 'xl' }} ml={10} my={['25px', '30px', '45px']} maxWidth={['sm', 'md', 'lg']}>
+					<Text
+						fontSize={{ base: 'sm', md: 'lg', lg: 'xl' }}
+						ml={10}
+						my={['25px', '30px', '45px']}
+						maxWidth={['sm', 'md', 'lg']}>
 						I create inspiring and unique projects by involving myself in all different kinds of tech.
 					</Text>
-					<NextLink href="#" passHref>
+					<NextLink href="#contact" passHref>
 						<Button
 							zIndex={1}
 							overflow="hidden"
