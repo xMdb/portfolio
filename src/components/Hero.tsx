@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 
 export const Hero = () => {
 	return (
-		<Box maxHeight="90vh" id="hero">
+		<Box maxHeight="90vh" mb="20vh" id="hero">
 			<Flex
 				flexDirection="column"
 				p={30}

@@ -2,6 +2,8 @@ import { Nav } from '../components/Nav';
 import { Meta } from '../components/Meta';
 import { Hero } from '../components/Hero';
 import { About } from '../components/About';
+import { Contact } from '../components/Contact';
+import { Footer } from '../components/Footer';
 
 const Index = () => {
 	return (
@@ -13,6 +15,9 @@ const Index = () => {
 			<Hero />
 
 			<About />
+
+			<Contact />
+			<Footer />
 		</>
 	);
 };
