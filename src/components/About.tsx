@@ -6,7 +6,7 @@ export const About = () => {
 	return (
 		<Box maxHeight="60vh" my="40vh" id="about">
 			{/* Master Flex */}
-			<Flex flexDirection={['column', 'row']} p={30} textAlign="left" justifyContent="center" alignItems="center">
+			<Flex flexDirection={['column', 'column', 'row']} p={30} textAlign="left" justifyContent="center" alignItems="center">
 				{/* Flex Item 1: About Text */}
 				<Flex flexDirection="column" p={30} textAlign="left" justifyContent="center" alignItems="center">
 					<Text fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }} fontWeight="semibold" mr={240}>

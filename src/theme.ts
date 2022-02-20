@@ -15,6 +15,10 @@ const styles = {
 		body: {
 			fontFamily: 'base',
 			bg: 'gray.900',
+			overflowX: 'hidden',
+		},
+		html: {
+			scrollBehavior: 'smooth',
 		},
 	},
 };
