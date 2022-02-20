@@ -7,7 +7,7 @@ import { Logo } from './Logo';
 
 export const Nav = () => {
 	return (
-		<Box maxHeight="10vh">
+		<Box height="10vh">
 			<Box minH="60px" py={30} px={[5, 25, 50]} textAlign="center" display={{ base: 'none', md: 'flex' }}>
 				<Logo />
 				<Flex display={{ base: 'none', md: 'flex' }} justifyContent="flex-end" flex={1}>

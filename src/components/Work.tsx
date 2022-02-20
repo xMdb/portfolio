@@ -3,7 +3,7 @@ import { Project } from './Project';
 
 export const Work = () => {
 	return (
-		<Box mt="50vh" id="work">
+		<Box mt={['50vw', '20vw']} id="work">
 			<Flex flexDirection="column" textAlign="center" justifyContent="center" alignItems="center">
 				<Text fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }} mb={-50} fontWeight="semibold">
 					<chakra.span color="teal.100" fontFamily="heading">

@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 
 export const About = () => {
 	return (
-		<Box maxHeight="60vh" my="40vh" id="about">
+		<Box mt={['100vw', '5vw']} id="about">
 			{/* Master Flex */}
 			<Flex flexDirection={['column', 'column', 'row']} p={30} textAlign="left" justifyContent="center" alignItems="center">
 				{/* Flex Item 1: About Text */}

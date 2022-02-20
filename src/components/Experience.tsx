@@ -3,7 +3,7 @@ import { RiCustomerService2Fill, RiVideoAddLine, RiSoundModuleFill, RiTerminalBo
 
 export const Experience = () => {
 	return (
-		<Box my="-20vh" id="experience">
+		<Box mt={['100vw', '10vw']} id="experience">
 			<Flex flexDirection="column" p={30} textAlign="center" justifyContent="center" alignItems="center">
 				<Text fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }} fontWeight="semibold" mb={5}>
 					<chakra.span color="teal.100" fontFamily="heading">
