@@ -10,7 +10,9 @@ export const Contact = () => {
 					</chakra.span>
 					Get In Touch
 				</Text>
-				<Text fontSize={{ base: 'sm', md: 'sm', lg: 'md' }} fontFamily="heading" color="teal.100" pb={5}>Come say hello!</Text>
+				<Text fontSize={{ base: 'sm', md: 'sm', lg: 'md' }} fontFamily="heading" color="teal.100" pb={5}>
+					Come say hello!
+				</Text>
 				<Link
 					fontSize={{ base: '4xl', md: '6xl', lg: '8xl' }}
 					fontWeight="bold"

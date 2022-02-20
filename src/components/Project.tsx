@@ -112,10 +112,13 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 						{Tags}
 					</Stack>
 					<Stack isInline justifyContent={['center', 'center', inverse ? 'left' : 'right']}>
-						<Link href={github} isExternal>
+						<Link
+							href={github}
+							isExternal
+							_hover={{ color: 'teal.100', transition: 'all 0.35s ease-in-out' }}>
 							<Icon as={SiGithub} w={20} h={7} />
 						</Link>
-						<Link href={url} isExternal>
+						<Link href={url} isExternal _hover={{ color: 'teal.100', transition: 'all 0.35s ease-in-out' }}>
 							<Icon as={RiExternalLinkLine} w={20} h={7} />
 						</Link>
 					</Stack>

@@ -9,7 +9,17 @@ export const Footer = () => {
 					fontFamily="heading"
 					href="https://github.com/bchiang7/v4"
 					isExternal
-					color="gray.200">
+					color="gray.200"
+					_hover={{
+						textDecoration: 'none',
+						color: 'teal.100',
+						transition: 'all 0.3s ease-in-out',
+					}}
+					_focus={{
+						textDecoration: 'none',
+						color: 'teal.100',
+						transition: 'all 0.3s ease-in-out',
+					}}>
 					Design inspired by Brittany Chiang
 					<br />
 					on GitHub
