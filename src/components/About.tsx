@@ -6,7 +6,12 @@ export const About = () => {
 	return (
 		<Box mt={['100vw', '5vw']} id="about">
 			{/* Master Flex */}
-			<Flex flexDirection={['column', 'column', 'row']} p={30} textAlign="left" justifyContent="center" alignItems="center">
+			<Flex
+				flexDirection={['column', 'column', 'row']}
+				p={30}
+				textAlign="left"
+				justifyContent="center"
+				alignItems="center">
 				{/* Flex Item 1: About Text */}
 				<Flex flexDirection="column" p={30} textAlign="left" justifyContent="center" alignItems="center">
 					<Text fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }} fontWeight="semibold" mr={240}>
@@ -54,13 +59,20 @@ export const About = () => {
 				</Flex>
 				{/* Flex Item 2: Image */}
 				<Flex flexDirection="column" p={30} textAlign="left" justifyContent="center" alignItems="center">
-					{/* <Box
-						border={1}
-						borderRadius={4}
+					<Box
+						border={4}
+						borderRadius={10}
 						borderColor="teal.100"
 						borderStyle="solid"
+						// too hard to make it responsive
+						display={['none', 'none', 'none', 'none', 'block']}
 						zIndex={-1}
-						p={10}></Box> */}
+						ml={50}
+						mt={50}
+						width={523}
+						height={380}
+						p={10}
+						position="absolute"></Box>
 					<Image src="/about.png" alt="Matthew Griffin" width={523} height={380} />
 				</Flex>
 			</Flex>
