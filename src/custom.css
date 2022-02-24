@@ -104,7 +104,8 @@ This file is used for styles that are impossible to use or annoying in Chakra UI
 	transition: width 0.3s;
 }
 
-.contactLink:hover::after {
+.contactLink:hover::after,
+.contactLink:focus::after {
 	width: 100%;
 	transition: width 0.3s;
 }
