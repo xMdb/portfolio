@@ -20,6 +20,20 @@ const styles = {
 		html: {
 			scrollBehavior: 'smooth',
 		},
+		'*': {
+			scrollbarWidth: 'thin',
+			scrollbarColor: '#A2A2A2 #252525',
+		},
+		'*::-webkit-scrollbar': {
+			width: '8px',
+		},
+		'*::-webkit-scrollbar-track': {
+			background: '#252525',
+		},
+		'*::-webkit-scrollbar-thumb': {
+			backgroundColor: '#A2A2A2',
+			borderRadius: '10px',
+		},
 	},
 };
 
