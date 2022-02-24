@@ -18,10 +18,16 @@ export const Hero = () => {
 						fontFamily="heading"
 						color="teal.100"
 						pb={5}
-						ml={10}>
+						ml={10}
+						className="fade delay6">
 						Hi 👋, my name is
 					</Text>
-					<Box borderLeft={1} borderLeftWidth={20} borderColor="teal.100" borderStyle="solid">
+					<Box
+						borderLeft={1}
+						borderLeftWidth={20}
+						borderColor="teal.100"
+						borderStyle="solid"
+						className="fade delay7">
 						<Text
 							fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}
 							fontWeight="black"
@@ -36,7 +42,8 @@ export const Hero = () => {
 						fontSize={{ base: 'sm', md: 'lg', lg: 'xl' }}
 						ml={10}
 						my={['25px', '30px', '45px']}
-						maxWidth={['sm', 'md', 'lg']}>
+						maxWidth={['sm', 'md', 'lg']}
+						className="fade delay8">
 						I create inspiring and unique projects by involving myself in all different kinds of tech.
 					</Text>
 					<NextLink href="#contact" passHref>
@@ -51,7 +58,8 @@ export const Hero = () => {
 							_hover={{
 								backgroundColor: 'rgba(86, 187, 187, 0.2)',
 								textDecoration: 'none',
-							}}>
+							}}
+							className="fade delay9">
 							Get in touch
 						</Button>
 					</NextLink>

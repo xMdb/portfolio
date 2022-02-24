@@ -26,7 +26,7 @@ export const Work = () => {
 				title="Craft"
 				description="A website for a fake programming language that I came up with. It doesn't exist. I designed the UI in in Figma and brought it to the web using TailwindCSS."
 				imagePath="/projects/craft.jpg"
-				tech={['HTML', 'Tailwind CSS']}
+				tech={['HTML', 'Tailwind CSS', 'Node.js']}
 				github="https://github.com/xMdb/craft"
 				url="https://craft-mockup.netlify.app"
 				inverse={true}

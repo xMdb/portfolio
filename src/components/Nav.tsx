@@ -33,7 +33,8 @@ const DesktopNav = () => {
 						color="white"
 						_hover={{
 							color: 'teal.100',
-						}}>
+						}}
+						className={`fade delay${order}`}>
 						<chakra.span color="teal.100">{order}. </chakra.span>
 						{label}
 					</Link>
@@ -47,7 +48,8 @@ const DesktopNav = () => {
 					_hover={{
 						backgroundColor: 'rgba(86, 187, 187, 0.2)',
 						textDecoration: 'none',
-					}}>
+					}}
+					className="fade delay5">
 					Resume
 				</Button>
 			</NextLink>

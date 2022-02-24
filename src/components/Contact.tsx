@@ -14,20 +14,15 @@ export const Contact = () => {
 					Come say hello!
 				</Text>
 				<Link
+					className="contactLink"
 					fontSize={{ base: '4xl', md: '6xl', lg: '8xl' }}
 					fontWeight="bold"
 					pb={5}
 					_hover={{
-						textDecoration: 'underline',
-						textDecorationColor: 'teal.100',
-						textUnderlinePosition: 'under',
-						textDecorationThickness: '15px',
+						textDecoration: 'none',
 					}}
 					_focus={{
-						textDecoration: 'underline',
-						textDecorationColor: 'teal.100',
-						textUnderlinePosition: 'under',
-						textDecorationThickness: '15px',
+						textDecoration: 'none',
 					}}
 					href="mailto:matt@xmdb.dev">
 					matt@xmdb.dev

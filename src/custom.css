@@ -1,0 +1,115 @@
+/* 
+This file is used for styles that are impossible to use or annoying in Chakra UI.
+*/
+
+/* Page Fade In */
+
+.fade {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: fadeIn;
+}
+
+/* 1. About */
+.delay1 {
+	animation-delay: 0.2s;
+}
+
+/* 2. Experience */
+.delay2 {
+	animation-delay: 0.4s;
+}
+
+/* 3. Work */
+.delay3 {
+	animation-delay: 0.6s;
+}
+
+/* 4. Contact */
+.delay4 {
+	animation-delay: 0.8s;
+}
+
+/* Resume Button */
+.delay5 {
+	animation-delay: 1s;
+}
+
+/* Hi, my name is */
+.delay6 {
+	animation-delay: 1.4s;
+}
+
+/* Main Text */
+.delay7 {
+	animation-delay: 1.6s;
+}
+
+/* Description */
+.delay8 {
+	animation-delay: 1.8s;
+}
+
+/* CTA */
+.delay9 {
+	animation-delay: 2s;
+}
+
+/* Set to lower animation delay if on mobile */
+@media screen and (max-width: 768px) {
+	/* Hi, my name is */
+	.delay6 {
+		animation-delay: 0.25s;
+	}
+
+	/* Main Text */
+	.delay7 {
+		animation-delay: 0.5s;
+	}
+
+	/* Description */
+	.delay8 {
+		animation-delay: 0.75s;
+	}
+
+	/* CTA */
+	.delay9 {
+		animation-delay: 1s;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 25%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* Email Hover */
+
+.contactLink {
+	text-decoration: none;
+}
+
+.contactLink::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 10px;
+	background: #64dfdf;
+	transition: width 0.3s;
+}
+
+.contactLink:hover::after {
+	width: 100%;
+	transition: width 0.3s;
+}
+
+/* Scroll Behavior */
+* {
+	scroll-behavior: smooth;
+}
