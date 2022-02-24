@@ -17,9 +17,6 @@ const styles = {
 			bg: 'gray.900',
 			overflowX: 'hidden',
 		},
-		html: {
-			scrollBehavior: 'smooth',
-		},
 		'*': {
 			scrollbarWidth: 'thin',
 			scrollbarColor: '#A2A2A2 #252525',
@@ -33,6 +30,14 @@ const styles = {
 		'*::-webkit-scrollbar-thumb': {
 			backgroundColor: '#A2A2A2',
 			borderRadius: '10px',
+		},
+		'*::selection': {
+			background: '#009db3',
+			color: '#fff',
+		},
+		'*::-moz-selection': {
+			background: '#009db3',
+			color: '#fff',
 		},
 	},
 };
