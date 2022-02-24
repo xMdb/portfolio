@@ -64,11 +64,11 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 	));
 
 	return (
-		<Box maxHeight="60vh" id={`project-${id}`} px={[0, '25vw']} my="10vh">
+		<Box maxHeight="60vh" id={`project-${id}`} my={[125, '10vw']}>
 			<Flex
 				flexDirection={['column', 'column', 'row']}
 				p={30}
-				justifyContent={inverse ? 'left' : 'right'}
+				justifyContent="center"
 				alignItems="center">
 				<Box
 					alignItems="left"
@@ -104,8 +104,9 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 						mb={25}
 						backgroundColor={'gray.800'}
 						p={5}
-						borderRadius={5}
-						position="relative">
+						mr={[0, inverse ? 10 : 0]}
+						ml={[0, inverse ? 0 : 10]}
+						borderRadius={5}>
 						{description}
 					</Text>
 					<Stack isInline justifyContent={['center', 'center', inverse ? 'left' : 'right']} mb={25}>
