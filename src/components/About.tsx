@@ -1,5 +1,4 @@
-import { Text, Flex, Box, chakra, UnorderedList, ListItem, Link } from '@chakra-ui/react';
-import Image from 'next/image';
+import { Text, Flex, Box, chakra, UnorderedList, ListItem, Link, Image } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 export const About = () => {
