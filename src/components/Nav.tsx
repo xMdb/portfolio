@@ -1,6 +1,6 @@
 import { Box, Flex, Text, IconButton, Stack, Link, useDisclosure, Button, chakra } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import NextLink from 'next/link';
 import { Logo } from './Logo';
@@ -50,15 +50,31 @@ const DesktopNav = () => {
 						textDecoration: 'none',
 					}}
 					className="fade delay5">
-					Resume
+					RESUME
 				</Button>
 			</NextLink>
 		</Box>
 	);
 };
+
 const MobileNav = () => {
-	const { getButtonProps, getDisclosureProps, isOpen } = useDisclosure();
+	const { getButtonProps, getDisclosureProps, isOpen, onClose } = useDisclosure();
 	const [hidden, setHidden] = useState(!isOpen);
+
+	// Prevent scrolling when the menu is open
+	useEffect(() => {
+		if (isOpen) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = 'auto';
+		}
+
+		// Clean up the effect
+		return () => {
+			document.body.style.overflow = 'auto';
+		};
+	}, [isOpen]);
+
 	return (
 		<>
 			<motion.div
@@ -69,7 +85,7 @@ const MobileNav = () => {
 				onAnimationComplete={() => setHidden(!isOpen)}
 				animate={{ width: isOpen ? 300 : 0 }}
 				style={{
-					background: '#353535',
+					background: '#0f0f0f',
 					overflow: 'hidden',
 					whiteSpace: 'nowrap',
 					position: 'fixed',
@@ -80,7 +96,14 @@ const MobileNav = () => {
 				}}>
 				<Stack justify="center" alignItems="center" align="center" my="25vh">
 					{NavItems.map((navItem) => (
-						<MobileNavItem key={navItem.label} {...navItem} />
+						<MobileNavItem
+							key={navItem.label}
+							{...navItem}
+							triggerClick={() => {
+								() => setHidden(true);
+								onClose();
+							}}
+						/>
 					))}
 					<Box>
 						<NextLink href="/resume.pdf" passHref>
@@ -92,7 +115,7 @@ const MobileNav = () => {
 									backgroundColor: 'rgba(86, 187, 187, 0.2)',
 									textDecoration: 'none',
 								}}>
-								Resume
+								RESUME
 							</Button>
 						</NextLink>
 					</Box>
@@ -116,7 +139,7 @@ const MobileNav = () => {
 	);
 };
 
-const MobileNavItem = ({ label, order, href }: NavItem) => {
+const MobileNavItem = ({ label, order, href, triggerClick }: NavItem) => {
 	return (
 		<Stack align="center">
 			<Flex
@@ -129,7 +152,8 @@ const MobileNavItem = ({ label, order, href }: NavItem) => {
 					color: 'teal.100',
 					textDecoration: 'none',
 				}}>
-				<Text fontWeight={100} fontFamily="heading" fontSize="2xl">
+				{/* @ts-expect-error undefined func */}
+				<Text fontWeight={100} fontFamily="heading" fontSize="2xl" onClick={() => triggerClick()}>
 					<chakra.span color="teal.100">{order}. </chakra.span>
 					{label}
 				</Text>
@@ -142,6 +166,7 @@ interface NavItem {
 	label: string;
 	order: number;
 	href?: string;
+	triggerClick?: () => void;
 }
 
 const NavItems: Array<NavItem> = [

@@ -6,15 +6,15 @@ export default {
 	email: 'matt@xmdb.dev',
 	legalName: 'Matthew Griffin',
 	// eslint-disable-next-line
-	defaultDescription: "Heya! I'm Matthew Griffin and I'm a developer and digital creator.",
+	defaultDescription: "Heya! I'm Matthew Griffin and I'm a full-stack web developer and designer.",
 	socials: [
 		{
 			name: 'GitHub',
 			url: 'https://github.com/xMdb',
 		},
 		{
-			name: 'Twitter',
-			url: 'https://twitter.com/xMdbMatt',
+			name: 'X',
+			url: 'https://x.com/xMdbMatt',
 			handle: '@xMdbMatt',
 		},
 		{

@@ -21,23 +21,23 @@ export const About = () => {
 					</Text>
 					<Text fontSize={{ base: 'smaller', md: 'sm', lg: 'md' }} fontWeight="normal" maxWidth={450} pb={5}>
 						<br />
-						Hey! My name is Matthew and I'm 17. I enjoy tinkering with technology. I've been an avid
-						computer user for quite some time now and I am still learning new things everyday. I started my
-						internet journey back in 2014 by creating{' '}
+						Hey! My name is Matthew and I'm{' '}
+						{Math.floor((new Date().getTime() - new Date(2005, 1, 1).getTime()) / 31536000000)}. I enjoy
+						working with tech. I started my internet journey back in 2014 by creating{' '}
 						<Link href="https://youtube.com/xMdbMatt" color="teal.100" isExternal>
 							YouTube videos
 						</Link>{' '}
-						and playing games like Minecraft.
+						and playing video games.
 						<br />
 						<br />
-						Fast-forward to today, and I am now a full-stack developer working on multiple projects, along
-						with some{' '}
+						Fast-forward to today and I am now a full-stack developer and designer, along with
+						some{' '}
 						<NextLink href="#experience" passHref>
 							<Link href="#experience" color="teal.100">
 								other pretty snazzy skills
 							</Link>
-						</NextLink>{' '}
-						under my belt.
+						</NextLink>
+						.
 						<br />
 						<br />
 						Here are a few technologies I've been working with recently:
@@ -72,7 +72,7 @@ export const About = () => {
 						height={380}
 						p={10}
 						position="absolute"></Box>
-					<Image src="/about.png" alt="Matthew Griffin" width={523} height={380} />
+					<Image src="/about.png" alt="Matthew Griffin" width={'100%'} />
 				</Flex>
 			</Flex>
 		</Box>

@@ -7,45 +7,59 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 	// eslint-disable-next-line no-shadow
 	const getTag = (tech: string) => {
 		const values = [];
-		if (tech == 'React') {
-			values[0] = 'blue';
-			values[1] = FaReact;
-		} else if (tech == 'TypeScript') {
-			values[0] = 'twitter';
-			values[1] = SiTypescript;
-		} else if (tech == 'JavaScript') {
-			values[0] = 'yellow';
-			values[1] = FaJs;
-		} else if (tech == 'Node.js') {
-			values[0] = 'green';
-			values[1] = FaNodeJs;
-		} else if (tech == 'Tailwind CSS') {
-			values[0] = 'blue';
-			values[1] = SiTailwindcss;
-		} else if (tech == 'Chakra UI') {
-			values[0] = 'cyan';
-			values[1] = SiChakraui;
-		} else if (tech == 'Next.js') {
-			values[0] = 'white';
-			values[1] = SiNextdotjs;
-		} else if (tech == 'CSS') {
-			values[0] = 'pink';
-			values[1] = RiCss3Fill;
-		} else if (tech == 'HTML') {
-			values[0] = 'orange';
-			values[1] = RiHtml5Fill;
-		} else if (tech == 'YAML') {
-			values[0] = 'orange';
-			values[1] = FaCode;
-		} else if (tech == 'Ansible') {
-			values[0] = 'red';
-			values[1] = SiAnsible;
-		} else if (tech == 'Docker') {
-			values[0] = 'blue';
-			values[1] = FaDocker;
-		} else {
-			values[0] = 'gray';
-			values[1] = FaCode;
+
+		switch (tech) {
+			case 'React':
+				values[0] = 'blue';
+				values[1] = FaReact;
+				break;
+			case 'TypeScript':
+				values[0] = 'twitter';
+				values[1] = SiTypescript;
+				break;
+			case 'JavaScript':
+				values[0] = 'yellow';
+				values[1] = FaJs;
+				break;
+			case 'Node.js':
+				values[0] = 'green';
+				values[1] = FaNodeJs;
+				break;
+			case 'Tailwind CSS':
+				values[0] = 'blue';
+				values[1] = SiTailwindcss;
+				break;
+			case 'Chakra UI':
+				values[0] = 'cyan';
+				values[1] = SiChakraui;
+				break;
+			case 'Next.js':
+				values[0] = 'white';
+				values[1] = SiNextdotjs;
+				break;
+			case 'CSS':
+				values[0] = 'pink';
+				values[1] = RiCss3Fill;
+				break;
+			case 'HTML':
+				values[0] = 'orange';
+				values[1] = RiHtml5Fill;
+				break;
+			case 'YAML':
+				values[0] = 'orange';
+				values[1] = FaCode;
+				break;
+			case 'Ansible':
+				values[0] = 'red';
+				values[1] = SiAnsible;
+				break;
+			case 'Docker':
+				values[0] = 'blue';
+				values[1] = FaDocker;
+				break;
+			default:
+				values[0] = 'gray';
+				values[1] = FaCode;
 		}
 		return values;
 	};
@@ -64,12 +78,8 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 	));
 
 	return (
-		<Box maxHeight="60vh" id={`project-${id}`} my={[125, '10vw']}>
-			<Flex
-				flexDirection={['column', 'column', 'row']}
-				p={30}
-				justifyContent="center"
-				alignItems="center">
+		<Box maxHeight={['100vh', '60vh']} id={`project-${id}`} my={[125, '10vw']}>
+			<Flex flexDirection={['column', 'column', 'row']} p={30} justifyContent="center" alignItems="center">
 				<Box
 					alignItems="left"
 					display={['none', 'none', inverse ? 'none' : 'block']}
@@ -102,7 +112,7 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 						maxWidth="50ch"
 						wordBreak="break-word"
 						mb={25}
-						backgroundColor={'gray.800'}
+						backgroundColor={'gray.900'}
 						p={5}
 						mr={[0, inverse ? 10 : 0]}
 						ml={[0, inverse ? 0 : 10]}

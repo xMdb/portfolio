@@ -14,7 +14,7 @@ const styles = {
 	global: {
 		body: {
 			fontFamily: 'base',
-			bg: 'gray.900',
+			bg: 'black',
 			overflowX: 'hidden',
 		},
 		'*': {

@@ -5,11 +5,11 @@ export const Work = () => {
 	return (
 		<Box mt={['50vw', '20vw']} id="work">
 			<Flex flexDirection="column" textAlign="center" justifyContent="center" alignItems="center">
-				<Text fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }} mb={-50} fontWeight="semibold">
+				<Text fontSize={['3xl', '4xl']} fontWeight="semibold" mb="-100">
 					<chakra.span color="teal.100" fontFamily="heading">
 						3.{' '}
 					</chakra.span>
-					Some Things I've Made
+					Previous Work
 				</Text>
 			</Flex>
 			<Project
@@ -24,7 +24,7 @@ export const Work = () => {
 			<Project
 				id={1}
 				title="Craft"
-				description="A website for a fake programming language that I came up with. It doesn't exist. I designed the UI in in Figma and brought it to the web using TailwindCSS."
+				description="A website for a mock programming language that aims to create and distribute Minecraft mods, with a UI designed in Figma and brought to the web using technologies such as TailwindCSS, HTML, and Node.js."
 				imagePath="/projects/craft.jpg"
 				tech={['HTML', 'Tailwind CSS', 'Node.js']}
 				github="https://github.com/xMdb/craft"
