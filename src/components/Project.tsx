@@ -9,57 +9,57 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 		const values = [];
 
 		switch (tech) {
-			case 'React':
-				values[0] = 'blue';
-				values[1] = FaReact;
-				break;
-			case 'TypeScript':
-				values[0] = 'twitter';
-				values[1] = SiTypescript;
-				break;
-			case 'JavaScript':
-				values[0] = 'yellow';
-				values[1] = FaJs;
-				break;
-			case 'Node.js':
-				values[0] = 'green';
-				values[1] = FaNodeJs;
-				break;
-			case 'Tailwind CSS':
-				values[0] = 'blue';
-				values[1] = SiTailwindcss;
-				break;
-			case 'Chakra UI':
-				values[0] = 'cyan';
-				values[1] = SiChakraui;
-				break;
-			case 'Next.js':
-				values[0] = 'white';
-				values[1] = SiNextdotjs;
-				break;
-			case 'CSS':
-				values[0] = 'pink';
-				values[1] = RiCss3Fill;
-				break;
-			case 'HTML':
-				values[0] = 'orange';
-				values[1] = RiHtml5Fill;
-				break;
-			case 'YAML':
-				values[0] = 'orange';
-				values[1] = FaCode;
-				break;
-			case 'Ansible':
-				values[0] = 'red';
-				values[1] = SiAnsible;
-				break;
-			case 'Docker':
-				values[0] = 'blue';
-				values[1] = FaDocker;
-				break;
-			default:
-				values[0] = 'gray';
-				values[1] = FaCode;
+		case 'React':
+			values[0] = 'blue';
+			values[1] = FaReact;
+			break;
+		case 'TypeScript':
+			values[0] = 'twitter';
+			values[1] = SiTypescript;
+			break;
+		case 'JavaScript':
+			values[0] = 'yellow';
+			values[1] = FaJs;
+			break;
+		case 'Node.js':
+			values[0] = 'green';
+			values[1] = FaNodeJs;
+			break;
+		case 'Tailwind CSS':
+			values[0] = 'blue';
+			values[1] = SiTailwindcss;
+			break;
+		case 'Chakra UI':
+			values[0] = 'cyan';
+			values[1] = SiChakraui;
+			break;
+		case 'Next.js':
+			values[0] = 'white';
+			values[1] = SiNextdotjs;
+			break;
+		case 'CSS':
+			values[0] = 'pink';
+			values[1] = RiCss3Fill;
+			break;
+		case 'HTML':
+			values[0] = 'orange';
+			values[1] = RiHtml5Fill;
+			break;
+		case 'YAML':
+			values[0] = 'orange';
+			values[1] = FaCode;
+			break;
+		case 'Ansible':
+			values[0] = 'red';
+			values[1] = SiAnsible;
+			break;
+		case 'Docker':
+			values[0] = 'blue';
+			values[1] = FaDocker;
+			break;
+		default:
+			values[0] = 'gray';
+			values[1] = FaCode;
 		}
 		return values;
 	};
@@ -123,10 +123,7 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 						{Tags}
 					</Stack>
 					<Stack isInline justifyContent={['center', 'center', inverse ? 'left' : 'right']}>
-						<Link
-							href={github}
-							isExternal
-							_hover={{ color: 'teal.100', transition: 'all 0.35s ease-in-out' }}>
+						<Link href={github} isExternal _hover={{ color: 'teal.100', transition: 'all 0.35s ease-in-out' }}>
 							<Icon as={SiGithub} w={20} h={7} />
 						</Link>
 						<Link href={url} isExternal _hover={{ color: 'teal.100', transition: 'all 0.35s ease-in-out' }}>
