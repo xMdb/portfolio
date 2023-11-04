@@ -1,6 +1,12 @@
 /* 
-This file is used for styles that are impossible to use or annoying in Chakra UI.
+This file is used for utility styles that are impossible to use or annoying in Chakra UI.
 */
+
+/* Scroll Behavior */
+*,
+html {
+	scroll-behavior: smooth !important;
+}
 
 /* Page Fade In */
 
@@ -89,8 +95,16 @@ This file is used for styles that are impossible to use or annoying in Chakra UI
 	}
 }
 
-/* Email Hover */
+/* Square and Blue Bullet Points */
+.bluelist {
+	list-style-type: square;
+}
 
+.bluelist::marker {
+	color: #64dfdf;
+}
+
+/* Email Hover */
 .contactLink {
 	text-decoration: none;
 }
@@ -108,9 +122,4 @@ This file is used for styles that are impossible to use or annoying in Chakra UI
 .contactLink:focus::after {
 	width: 100%;
 	transition: width 0.3s;
-}
-
-/* Scroll Behavior */
-*, html {
-	scroll-behavior: smooth !important;
 }

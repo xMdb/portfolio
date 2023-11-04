@@ -1,5 +1,9 @@
 import { Text, Flex, Box, chakra, UnorderedList, ListItem, Link, Image } from '@chakra-ui/react';
-import NextLink from 'next/link';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const BlueListItem = ({ children }: any) => {
+	return <ListItem className="bluelist">{children}</ListItem>;
+};
 
 export const About = () => {
 	return (
@@ -39,17 +43,16 @@ export const About = () => {
 						<br />
 						Here are a few technologies I've been working with recently:
 					</Text>
-					{/* TODO: make square and blue */}
 					<Flex fontFamily="heading">
 						<UnorderedList mx={[50, 75, 100]}>
-							<ListItem>JavaScript</ListItem>
-							<ListItem>Ansible</ListItem>
-							<ListItem>Node.js</ListItem>
+							<BlueListItem>JavaScript</BlueListItem>
+							<BlueListItem>Ansible</BlueListItem>
+							<BlueListItem>Node.js</BlueListItem>
 						</UnorderedList>
 						<UnorderedList mx={[50, 75, 100]}>
-							<ListItem>TypeScript</ListItem>
-							<ListItem>Next.js</ListItem>
-							<ListItem>Docker</ListItem>
+							<BlueListItem>TypeScript</BlueListItem>
+							<BlueListItem>Next.js</BlueListItem>
+							<BlueListItem>Docker</BlueListItem>
 						</UnorderedList>
 					</Flex>
 				</Flex>
