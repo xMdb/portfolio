@@ -6,8 +6,8 @@ const config = {
 };
 
 const fonts = {
-	base: 'Inter',
-	heading: 'Space Mono',
+	base: 'Inter Variable',
+	heading: 'Source Code Pro Variable',
 };
 
 const styles = {
