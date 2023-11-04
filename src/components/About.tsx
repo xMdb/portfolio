@@ -1,4 +1,5 @@
 import { Text, Flex, Box, chakra, UnorderedList, ListItem, Link, Image } from '@chakra-ui/react';
+import React, { useRef, useEffect } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const BlueListItem = ({ children }: any) => {
@@ -6,6 +7,39 @@ const BlueListItem = ({ children }: any) => {
 };
 
 export const About = () => {
+	const boxRef = useRef<HTMLDivElement>(null);
+	const imageRef = useRef<HTMLImageElement>(null);
+
+	useEffect(() => {
+		const handleMouseMove = (e: MouseEvent) => {
+			const box = boxRef.current;
+			const image = imageRef.current;
+
+			if (box && image) {
+				const boxRect = box.getBoundingClientRect();
+				const imageRect = image.getBoundingClientRect();
+
+				const boxX = (boxRect.width / 2 - e.clientX) / 100 + 'px';
+				const boxY = (boxRect.height / 2 - e.clientY) / 100 + 'px';
+
+				const imageX = (imageRect.width / 2 - e.clientX) / 50 + 'px';
+				const imageY = (imageRect.height / 2 - e.clientY) / 50 + 'px';
+
+				box.style.transform = `translate(${boxX}, ${boxY})`;
+				image.style.transform = `translate(${imageX}, ${imageY})`;
+
+				// Add a transition to the box and image
+				box.style.transition = 'transform 0.3s ease-out';
+				image.style.transition = 'transform 0.3s ease-out';
+			}
+		};
+
+		document.addEventListener('mousemove', handleMouseMove);
+
+		return () => {
+			document.removeEventListener('mousemove', handleMouseMove);
+		};
+	}, []);
 	return (
 		<Box mt={['100vw', '5vw']} id="about">
 			{/* Master Flex */}
@@ -59,11 +93,11 @@ export const About = () => {
 				{/* Flex Item 2: Image */}
 				<Flex flexDirection="column" p={30} textAlign="left" justifyContent="center" alignItems="center">
 					<Box
+						ref={boxRef}
 						border={4}
 						borderRadius={10}
 						borderColor="teal.100"
 						borderStyle="solid"
-						// too hard to make it responsive
 						display={['none', 'none', 'none', 'none', 'block']}
 						zIndex={-1}
 						ml={50}
@@ -71,8 +105,15 @@ export const About = () => {
 						width={523}
 						height={380}
 						p={10}
-						position="absolute"></Box>
-					<Image src="/about.png" alt="Matthew Griffin" width={'100%'} />
+						position="absolute"
+						transition="transform 0.1s ease-out"></Box>
+					<Image
+						ref={imageRef}
+						src="/about.png"
+						alt="Matthew Griffin"
+						width={'100%'}
+						transition="transform 0.1s ease-out"
+					/>
 				</Flex>
 			</Flex>
 		</Box>
