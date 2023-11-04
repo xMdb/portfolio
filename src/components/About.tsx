@@ -30,13 +30,10 @@ export const About = () => {
 						and playing video games.
 						<br />
 						<br />
-						Fast-forward to today and I am now a full-stack developer and designer, along with
-						some{' '}
-						<NextLink href="#experience" passHref>
-							<Link href="#experience" color="teal.100">
-								other pretty snazzy skills
-							</Link>
-						</NextLink>
+						Fast-forward to today and I am now a full-stack developer and designer, along with some{' '}
+						<Link href="#experience" color="teal.100">
+							other pretty snazzy skills
+						</Link>
 						.
 						<br />
 						<br />
