@@ -16,7 +16,7 @@ export const Contact = () => {
 					fontFamily="heading"
 					color="teal.100"
 					pb={5}>
-					Come say hi, and let's discuss your next project.
+					Come say hi! 👋
 				</Text>
 				<Link
 					className="contactLink"

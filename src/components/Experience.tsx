@@ -5,16 +5,28 @@ import {
 	RiAdminLine,
 	RiCodeSSlashLine,
 	RiCustomerService2Line,
-	RiSoundModuleLine,
+	RiBugLine,
 } from 'react-icons/ri';
 
 export const Experience = () => {
 	const skills = [
 		{
+			id: 4,
+			icon: <RiAdminLine />,
+			title: 'System Administration',
+			text: 'As well as running my own Proxmox and Linux homelab at home, I manage computers and servers daily to ensure they are running smoothly.',
+		},
+		{
 			id: 0,
 			icon: <RiCustomerService2Line />,
 			title: 'Customer Service',
 			text: 'I assist customers day-to-day by providing them with exceptional customer service.',
+		},
+		{
+			id: 2,
+			icon: <RiBugLine />,
+			title: 'Bug Hunting',
+			text: 'I regularly find and report bugs, mainly with Discord!',
 		},
 		{
 			id: 1,
@@ -23,22 +35,10 @@ export const Experience = () => {
 			text: 'I create various digital works such as videos, designs, and artwork in Figma, Adobe Illustrator, Adobe Photoshop, and Adobe Premiere Pro.',
 		},
 		{
-			id: 2,
-			icon: <RiSoundModuleLine />,
-			title: 'Tech Crew',
-			text: 'I work with my fellow peers at school to create outstanding musical performances and events.',
-		},
-		{
 			id: 3,
 			icon: <RiCodeSSlashLine />,
 			title: 'Full-Stack Developer',
-			text: 'I regularly develop open-source projects using technologies such as Node.js, React, and TypeScript.',
-		},
-		{
-			id: 4,
-			icon: <RiAdminLine />,
-			title: 'System Administration',
-			text: 'I have setup my own Linux homelab server using a Raspberry Pi to test out various applications and configurations in regards to networking and DevOps.',
+			text: 'I  develop open-source projects using technologies such as Node.js, React, and TypeScript.',
 		},
 		{
 			id: 5,

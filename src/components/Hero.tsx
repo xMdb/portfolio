@@ -35,7 +35,7 @@ export const Hero = () => {
 							mx={5}>
 							Matthew Griffin.
 							<br />
-							<chakra.span color="gray.200">Web Developer & Designer.</chakra.span>
+							<chakra.span color="gray.200">Sysadmin & Bug Hunter.</chakra.span>
 						</Text>
 					</Box>
 					<Text
@@ -44,7 +44,7 @@ export const Hero = () => {
 						my={['25px', '30px', '45px']}
 						maxWidth={['sm', 'md', 'lg']}
 						className="fade delay8">
-						I'm a web developer and designer with a passion for creating innovative online experiences.
+						I am a technically driven and fast-learning IT professional with a passion for customer experience, technical support, and system administration.
 					</Text>
 					<NextLink href="#contact" passHref>
 						<Button

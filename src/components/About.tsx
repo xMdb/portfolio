@@ -68,7 +68,7 @@ export const About = () => {
 						and playing video games.
 						<br />
 						<br />
-						Fast-forward to today and I am now a full-stack developer and designer, along with some{' '}
+						Fast-forward to today and I am now a system administrator and IT technician, along with some{' '}
 						<Link href="#experience" color="teal.100">
 							other pretty snazzy skills
 						</Link>
