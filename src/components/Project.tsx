@@ -66,12 +66,10 @@ export const Project = ({ id, description, title, imagePath, tech, github, url, 
 	const Tags = tech.map((item) => (
 		<Tag
 			key={item}
-			// @ts-expect-error "colorScheme" works but tsc says otherwise ¯\_(ツ)_/¯
 			colorScheme={getTag(item)[0]}
 			size="md"
 			cursor="default"
 			textAlign={['center', inverse ? 'right' : 'left']}>
-			{/* @ts-expect-error "as" WAI but tsc disagrees */}
 			<TagLeftIcon as={getTag(item)[1]}></TagLeftIcon>
 			<TagLabel>{item}</TagLabel>
 		</Tag>
